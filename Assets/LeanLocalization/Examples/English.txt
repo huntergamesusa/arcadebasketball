@@ -1,0 +1,2 @@
+﻿Hello = Hello // Description
+Language = English // Description

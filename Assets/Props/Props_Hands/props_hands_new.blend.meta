@@ -1,0 +1,103 @@
+fileFormatVersion: 2
+guid: b4738136ab8e94fa19a871ae6246d9fd
+timeCreated: 1445998364
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Butcher_Knife
+    100002: Cube
+    100004: Magic_wand
+    100006: //RootNode
+    100008: Solo_Pistol
+    100010: Yeti_Hand_L
+    100012: Yeti_Hand_R
+    400000: Butcher_Knife
+    400002: Cube
+    400004: Magic_wand
+    400006: //RootNode
+    400008: Solo_Pistol
+    400010: Yeti_Hand_L
+    400012: Yeti_Hand_R
+    2300000: Butcher_Knife
+    2300002: Cube
+    2300004: Magic_wand
+    2300006: Solo_Pistol
+    2300008: Yeti_Hand_L
+    2300010: Yeti_Hand_R
+    3300000: Butcher_Knife
+    3300002: Cube
+    3300004: Magic_wand
+    3300006: Solo_Pistol
+    3300008: Yeti_Hand_L
+    3300010: Yeti_Hand_R
+    4300000: Yeti_Hand_R
+    4300002: Yeti_Hand_L
+    4300004: Solo_Pistol
+    4300006: Magic_wand
+    4300008: Butcher_Knife
+    4300010: Cube
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .349999994
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,26 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HeyPlayManager.cs">
+    <Files>
+      <File FileName="../../../../../../../Users/Nate/Documents/HotPursuitIsland_Revamped/Assets/Scripts/CarMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/basketballThrow_TouchY.js" Line="1" Column="1" />
+      <File FileName="Assets/ScaleAnimCharac.cs" Line="1" Column="1" />
+      <File FileName="Assets/UniversalRateNate.cs" Line="1" Column="1" />
+      <File FileName="Assets/SmartLocalization_Nate.cs" Line="1" Column="1" />
+      <File FileName="Assets/BuddyTossJson.cs" Line="1" Column="1" />
+      <File FileName="Assets/ScaleAnimCharacArchived.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/StansAssets/Modules/IOSNative/xExamples/Scripts/Other/PopUpExamples.cs" Line="1" Column="1" />
+      <File FileName="Assets/Plugins/StansAssets/Modules/IOSNative/Scripts/Messaging/PopUps/Controllers/IOSNativePopUpManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/HeyPlayManager.cs" Line="203" Column="1" />
+      <File FileName="Assets/JScript/randomItemGiveAway.js" Line="1" Column="1" />
+      <File FileName="Assets/newScreenCaptureShare.cs" Line="1" Column="1" />
+      <File FileName="Assets/adcolony/PlayV4VCAdButtonNate.cs" Line="1" Column="1" />
+      <File FileName="Assets/AnsersBuddyToss.cs" Line="1" Column="1" />
+      <File FileName="Assets/TimeReward.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

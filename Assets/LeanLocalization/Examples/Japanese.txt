@@ -1,0 +1,2 @@
+﻿Hello = こんにちは // Description
+Language = 日本語 // Description

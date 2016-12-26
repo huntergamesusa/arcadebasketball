@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="BT.AFRO" xml:space="preserve">
+		<value>AFRO</value>
+	</data>
+	<data name="BT.BADGER" xml:space="preserve">
+		<value>BADGER</value>
+	</data>
+	<data name="BT.BASEBALLBAT" xml:space="preserve">
+		<value>MAZZA DA BASEBALL</value>
+	</data>
+	<data name="BT.BASKETBALL" xml:space="preserve">
+		<value>BASKET</value>
+	</data>
+	<data name="BT.BEACHBABE" xml:space="preserve">
+		<value>SPIAGGIA BABE</value>
+	</data>
+	<data name="BT.bestscoretnt" xml:space="preserve">
+		<value>È il mio miglior punteggio del livello di TNT</value>
+	</data>
+	<data name="BT.bestscorewind" xml:space="preserve">
+		<value>È il mio miglior punteggio</value>
+	</data>
+	<data name="BT.besttimepong" xml:space="preserve">
+		<value>È il mio miglior tempo a Buddy Pong</value>
+	</data>
+	<data name="BT.BIGGREENBUDDY" xml:space="preserve">
+		<value>COMPAGNO VERDE GRANDE</value>
+	</data>
+	<data name="BT.BMXBILLY" xml:space="preserve">
+		<value>BMX BILLY</value>
+	</data>
+	<data name="BT.BOUNTYHUNTER" xml:space="preserve">
+		<value>CACCIATORE DI TAGLIE</value>
+	</data>
+	<data name="BT.BOUNTYHUNTERHELMET" xml:space="preserve">
+		<value>CACCIATORE DI TAGLIE CASCO</value>
+	</data>
+	<data name="BT.BOXERBUDDY" xml:space="preserve">
+		<value>BOXER BUDDY</value>
+	</data>
+	<data name="BT.BOXINGGLOVES" xml:space="preserve">
+		<value>GUANTONI DA BOXE</value>
+	</data>
+	<data name="BT.BOZOBUDDY" xml:space="preserve">
+		<value>BOZO BUDDY</value>
+	</data>
+	<data name="BT.BPcreditask" xml:space="preserve">
+		<value>Sei sicuro che si desidera utilizzare 1000 crediti per sbloccare Buddy Pong?</value>
+	</data>
+	<data name="BT.buddy" xml:space="preserve">
+		<value>Buddy</value>
+	</data>
+	<data name="BT.BUDDYJEFFERSON" xml:space="preserve">
+		<value>JEFFERSON DI BUDDY</value>
+	</data>
+	<data name="BT.buddypong" xml:space="preserve">
+		<value>pong di Buddy</value>
+	</data>
+	<data name="BT.buddytoss" xml:space="preserve">
+		<value>Toss di Buddy</value>
+	</data>
+	<data name="BT.bullseye" xml:space="preserve">
+		<value>Bullseye</value>
+	</data>
+	<data name="BT.BUSINESSBUDDY" xml:space="preserve">
+		<value>COMPAGNO DI AFFARI</value>
+	</data>
+	<data name="BT.claimgift" xml:space="preserve">
+		<value>Richiedi il tuo regalo gratis!</value>
+	</data>
+	<data name="BT.CLASSYSHOES" xml:space="preserve">
+		<value>SCARPE ELEGANTI</value>
+	</data>
+	<data name="BT.CLAWS" xml:space="preserve">
+		<value>ARTIGLI</value>
+	</data>
+	<data name="BT.CLOWNSHOES" xml:space="preserve">
+		<value>SCARPE DA CLOWN</value>
+	</data>
+	<data name="BT.congratulations" xml:space="preserve">
+		<value>Complimenti</value>
+	</data>
+	<data name="BT.COWBOYHAT" xml:space="preserve">
+		<value>CAPPELLO DA COWBOY</value>
+	</data>
+	<data name="BT.credits" xml:space="preserve">
+		<value>crediti</value>
+	</data>
+	<data name="BT.creditswon" xml:space="preserve">
+		<value>Crediti ha vinto!</value>
+	</data>
+	<data name="BT.CROC" xml:space="preserve">
+		<value>CROC</value>
+	</data>
+	<data name="BT.CROWN" xml:space="preserve">
+		<value>CORONA</value>
+	</data>
+	<data name="BT.cupsleft" xml:space="preserve">
+		<value>Tazze di sinistra</value>
+	</data>
+	<data name="BT.CUSTOMBUDDY" xml:space="preserve">
+		<value>BUDDY PERSONALIZZATO</value>
+	</data>
+	<data name="BT.DEMONPOOL" xml:space="preserve">
+		<value>DEMONPOOL</value>
+	</data>
+	<data name="BT.DOCTORBUDDY" xml:space="preserve">
+		<value>MEDICO AMICO</value>
+	</data>
+	<data name="BT.DOUBLESECRETAGENT" xml:space="preserve">
+		<value>DOPPIO AGENTE SEGRETO</value>
+	</data>
+	<data name="BT.DRIFTER" xml:space="preserve">
+		<value>DRIFTER</value>
+	</data>
+	<data name="BT.DUNCEHAT" xml:space="preserve">
+		<value>SOMARO CAPPELLO</value>
+	</data>
+	<data name="BT.earn" xml:space="preserve">
+		<value>guadagnare</value>
+	</data>
+	<data name="BT.edit" xml:space="preserve">
+		<value>modifica</value>
+	</data>
+	<data name="BT.ELF" xml:space="preserve">
+		<value>ELFO</value>
+	</data>
+	<data name="BT.ELFHAT" xml:space="preserve">
+		<value>CAPPELLO ELFO</value>
+	</data>
+	<data name="BT.ELFSHOES" xml:space="preserve">
+		<value>SCARPE ELFO</value>
+	</data>
+	<data name="BT.error" xml:space="preserve">
+		<value>Errore</value>
+	</data>
+	<data name="BT.EVILEMPEROR" xml:space="preserve">
+		<value>IMPERATORE DEL MALE</value>
+	</data>
+	<data name="BT.EVILVILLAINMASK" xml:space="preserve">
+		<value>MASCHERA DI MALVAGIO NEMICO</value>
+	</data>
+	<data name="BT.facecamera" xml:space="preserve">
+		<value>rivolto alla telecamera</value>
+	</data>
+	<data name="BT.FANFINGER" xml:space="preserve">
+		<value>DITO DEL FAN</value>
+	</data>
+	<data name="BT.fieldgoal" xml:space="preserve">
+		<value>OBIETTIVO DEL CAMPO</value>
+	</data>
+	<data name="BT.FIREMANBUDDY" xml:space="preserve">
+		<value>VIGILE DEL FUOCO AMICO</value>
+	</data>
+	<data name="BT.FOOTBALL" xml:space="preserve">
+		<value>GIOCO DEL CALCIO</value>
+	</data>
+	<data name="BT.FOOTBALLBUDDY" xml:space="preserve">
+		<value>CALCIO BUDDY</value>
+	</data>
+	<data name="BT.FOOTBALLHELMET" xml:space="preserve">
+		<value>CASCO DA FOOTBALL</value>
+	</data>
+	<data name="BT.freegift" xml:space="preserve">
+		<value>dono gratuito</value>
+	</data>
+	<data name="BT.FUTUREBOARD" xml:space="preserve">
+		<value>PENSIONE FUTURA</value>
+	</data>
+	<data name="BT.FUTUREBUDDY" xml:space="preserve">
+		<value>FUTURE BUDDY</value>
+	</data>
+	<data name="BT.FUTURESHOES" xml:space="preserve">
+		<value>SCARPE DEL FUTURE</value>
+	</data>
+	<data name="BT.gameover" xml:space="preserve">
+		<value>Fine partita</value>
+	</data>
+	<data name="BT.GASMASK" xml:space="preserve">
+		<value>MASCHERA ANTIGAS</value>
+	</data>
+	<data name="BT.giftin" xml:space="preserve">
+		<value>Regalo in</value>
+	</data>
+	<data name="BT.GOLFCLUB" xml:space="preserve">
+		<value>GOLF CLUB</value>
+	</data>
+	<data name="BT.GRANDMASTERMASK" xml:space="preserve">
+		<value>MASCHERA GRAN MAESTRO</value>
+	</data>
+	<data name="BT.HAMMER" xml:space="preserve">
+		<value>MARTELLO</value>
+	</data>
+	<data name="BT.HAWKSMASK" xml:space="preserve">
+		<value>MASCHERA DI FALCO</value>
+	</data>
+	<data name="BT.HIPSTERS" xml:space="preserve">
+		<value>HIPSTER</value>
+	</data>
+	<data name="BT.HORSEFACE" xml:space="preserve">
+		<value>FRONTE DEL CAVALLO</value>
+	</data>
+	<data name="BT.ICESKATES" xml:space="preserve">
+		<value>PATTINI DA GHIACCIO</value>
+	</data>
+	<data name="BT.JACKROGER" xml:space="preserve">
+		<value>JACK ROGER</value>
+	</data>
+	<data name="BT.JANE" xml:space="preserve">
+		<value>JANE</value>
+	</data>
+	<data name="BT.JOHN" xml:space="preserve">
+		<value>JOHN</value>
+	</data>
+	<data name="BT.JOHNNYBASEBALL" xml:space="preserve">
+		<value>BASEBALL DI JOHNNY</value>
+	</data>
+	<data name="BT.justunlocked" xml:space="preserve">
+		<value>Appena sbloccato</value>
+	</data>
+	<data name="BT.KIDMAGIC" xml:space="preserve">
+		<value>MAGIA DI CAPRETTO</value>
+	</data>
+	<data name="BT.KNIGHT" xml:space="preserve">
+		<value>CAVALIERE</value>
+	</data>
+	<data name="BT.KNIGHTSHELMET" xml:space="preserve">
+		<value>CASCO DEL CAVALIERE</value>
+	</data>
+	<data name="BT.LANCE" xml:space="preserve">
+		<value>LANCE</value>
+	</data>
+	<data name="BT.LANCEMOONWALKER" xml:space="preserve">
+		<value>LANCE MOONWALKER</value>
+	</data>
+	<data name="BT.language" xml:space="preserve">
+		<value>lingua</value>
+	</data>
+	<data name="BT.level" xml:space="preserve">
+		<value>livello</value>
+	</data>
+	<data name="BT.LUCHADOR" xml:space="preserve">
+		<value>LUCHADOR</value>
+	</data>
+	<data name="BT.LUITHECARPENTER" xml:space="preserve">
+		<value>LENNY IL CARPENTIERE</value>
+	</data>
+	<data name="BT.MACHETE" xml:space="preserve">
+		<value>MACHETE</value>
+	</data>
+	<data name="BT.MADCHEMIST" xml:space="preserve">
+		<value>FOLLE CHIMICO</value>
+	</data>
+	<data name="BT.MAGICWAND" xml:space="preserve">
+		<value>BACCHETTA MAGICA</value>
+	</data>
+	<data name="BT.MANNYTHEPLUMBER" xml:space="preserve">
+		<value>MANNY L'IDRAULICO</value>
+	</data>
+	<data name="BT.MARLEY" xml:space="preserve">
+		<value>MARLEY FLINN</value>
+	</data>
+	<data name="BT.MASKMAN" xml:space="preserve">
+		<value>MASCHERA UOMO</value>
+	</data>
+	<data name="BT.MEANONE" xml:space="preserve">
+		<value>DIRE UNO</value>
+	</data>
+	<data name="BT.MISTERFLICK" xml:space="preserve">
+		<value>MISTER FLICK</value>
+	</data>
+	<data name="BT.MONSTERHANDS" xml:space="preserve">
+		<value>MANI MOSTRO</value>
+	</data>
+	<data name="BT.MOVIESTAR" xml:space="preserve">
+		<value>STAR DEL CINEMA</value>
+	</data>
+	<data name="BT.mute" xml:space="preserve">
+		<value>muto</value>
+	</data>
+	<data name="BT.nicetoss" xml:space="preserve">
+		<value>Hai appena avuto distrutto... bel lancio!</value>
+	</data>
+	<data name="BT.NIGHTMAREBUDDY" xml:space="preserve">
+		<value>AMICO DI INCUBO</value>
+	</data>
+	<data name="BT.NO" xml:space="preserve">
+		<value>NO</value>
+	</data>
+	<data name="BT.NOSHADOWS" xml:space="preserve">
+		<value>OMBRE FUORI</value>
+	</data>
+	<data name="BT.notenoughcredits" xml:space="preserve">
+		<value>Non abbastanza crediti</value>
+	</data>
+	<data name="BT.OFFICERJOE" xml:space="preserve">
+		<value>UFFICIALE DI JOE</value>
+	</data>
+	<data name="BT.ONEEYE" xml:space="preserve">
+		<value>UN OCCHIO</value>
+	</data>
+	<data name="BT.pausemenu" xml:space="preserve">
+		<value>menu di pausa</value>
+	</data>
+	<data name="BT.PHASERGUN" xml:space="preserve">
+		<value>PISTOLA PHASER</value>
+	</data>
+	<data name="BT.PRANKSTERBUDDY" xml:space="preserve">
+		<value>BURLONE BUDDY</value>
+	</data>
+	<data name="BT.PREPPYBUDDY" xml:space="preserve">
+		<value>PREPPY BUDDY</value>
+	</data>
+	<data name="BT.PRESIDENTBUDDY" xml:space="preserve">
+		<value>PRESIDENTE BUDDY</value>
+	</data>
+	<data name="BT.PRINCESS" xml:space="preserve">
+		<value>PRINCIPESSA</value>
+	</data>
+	<data name="BT.PSYCHOMAN" xml:space="preserve">
+		<value>PSYCHO MAN</value>
+	</data>
+	<data name="BT.RAPPERBUDDY" xml:space="preserve">
+		<value>RAPPER BUDDY</value>
+	</data>
+	<data name="BT.ratelater" xml:space="preserve">
+		<value>Tasso più tardi</value>
+	</data>
+	<data name="BT.ratenever" xml:space="preserve">
+		<value>Mai mi ricordano</value>
+	</data>
+	<data name="BT.ratenow" xml:space="preserve">
+		<value>Vota ora</value>
+	</data>
+	<data name="BT.ratingbody" xml:space="preserve">
+		<value>Come il nostro gioco? </value>
+	</data>
+	<data name="BT.REBELBRO" xml:space="preserve">
+		<value>RIBELLE BRO</value>
+	</data>
+	<data name="BT.record" xml:space="preserve">
+		<value>record</value>
+	</data>
+	<data name="BT.removeads" xml:space="preserve">
+		<value>rimuovere gli annunci</value>
+	</data>
+	<data name="BT.restorecomplete" xml:space="preserve">
+		<value>Ripristino completa</value>
+	</data>
+	<data name="BT.restorepurchases" xml:space="preserve">
+		<value>ripristinare gli acquisti</value>
+	</data>
+	<data name="BT.RIOTCOP" xml:space="preserve">
+		<value>POLIZIOTTO ANTISOMMOSSA</value>
+	</data>
+	<data name="BT.ROADWORKER" xml:space="preserve">
+		<value>OPERAIO DELLA STRADA</value>
+	</data>
+	<data name="BT.ROBBERBUDDY" xml:space="preserve">
+		<value>RAPINATORE BUDDY</value>
+	</data>
+	<data name="BT.ROBOT" xml:space="preserve">
+		<value>ROBOT</value>
+	</data>
+	<data name="BT.ROLLERBLADES" xml:space="preserve">
+		<value>ROLLERBLADES</value>
+	</data>
+	<data name="BT.RUSTY" xml:space="preserve">
+		<value>ARRUGGINITO</value>
+	</data>
+	<data name="BT.SAIS" xml:space="preserve">
+		<value>SAIS</value>
+	</data>
+	<data name="BT.SANTA" xml:space="preserve">
+		<value>SANTA</value>
+	</data>
+	<data name="BT.SANTAHAT" xml:space="preserve">
+		<value>CAPPELLO DELLA SANTA</value>
+	</data>
+	<data name="BT.score" xml:space="preserve">
+		<value>Punteggio ottenuto</value>
+	</data>
+	<data name="BT.select" xml:space="preserve">
+		<value>Selezionare</value>
+	</data>
+	<data name="BT.SHADOWS" xml:space="preserve">
+		<value>OMBRE SU</value>
+	</data>
+	<data name="BT.share" xml:space="preserve">
+		<value>Condividi</value>
+	</data>
+	<data name="BT.SHERIFFBUDDY" xml:space="preserve">
+		<value>SCERIFFO BUDDY</value>
+	</data>
+	<data name="BT.SHORTHAT" xml:space="preserve">
+		<value>BREVE CAPPELLO</value>
+	</data>
+	<data name="BT.SKATEBOARD" xml:space="preserve">
+		<value>SKATEBOARD</value>
+	</data>
+	<data name="BT.SKIPOLES" xml:space="preserve">
+		<value>BASTONCINI DA SCI</value>
+	</data>
+	<data name="BT.SKIS" xml:space="preserve">
+		<value>SCI</value>
+	</data>
+	<data name="BT.SNOWBOARD" xml:space="preserve">
+		<value>SNOWBOARD</value>
+	</data>
+	<data name="BT.sorrynotenough" xml:space="preserve">
+		<value>Mi dispiace che non hai abbastanza crediti.</value>
+	</data>
+	<data name="BT.SOULMAN" xml:space="preserve">
+		<value>SOUL MAN</value>
+	</data>
+	<data name="BT.SPACEDOGMASK" xml:space="preserve">
+		<value>MASCHERA DI CANE DELLO SPAZIO</value>
+	</data>
+	<data name="BT.SPACEGUARDIAN" xml:space="preserve">
+		<value>SPAZIO GUARDIAN</value>
+	</data>
+	<data name="BT.SPACEGUARDIANHELMET" xml:space="preserve">
+		<value>CASCO SPAZIALE GUARDIAN</value>
+	</data>
+	<data name="BT.SPACEVILLAINHELMET" xml:space="preserve">
+		<value>CASCO SPAZIALE VILLAIN</value>
+	</data>
+	<data name="BT.stoprecordingvideo" xml:space="preserve">
+		<value>interrompere la registrazione video</value>
+	</data>
+	<data name="BT.success" xml:space="preserve">
+		<value>Successo</value>
+	</data>
+	<data name="BT.SUPERBUGMAN" xml:space="preserve">
+		<value>UOMO SUPER BUG</value>
+	</data>
+	<data name="BT.SUPERGALACTIC" xml:space="preserve">
+		<value>BUDDY SUPER GALATTICA 2 X CREDITI E 1000 CREDITI GRATIS CON L'ACQUISTO</value>
+	</data>
+	<data name="BT.SUPERGLOWSTICK" xml:space="preserve">
+		<value>SUPER GLOW STICK</value>
+	</data>
+	<data name="BT.SUPERGLOWSTICKH" xml:space="preserve">
+		<value>SUPER GLOW STICK EROE</value>
+	</data>
+	<data name="BT.SUPERGUY" xml:space="preserve">
+		<value>RAGAZZO SUPER</value>
+	</data>
+	<data name="BT.SUPERHAWKMAN" xml:space="preserve">
+		<value>SUPER HAWK UOMO</value>
+	</data>
+	<data name="BT.SUPERMAGNETMAN" xml:space="preserve">
+		<value>UOMO SUPER MAGNETE</value>
+	</data>
+	<data name="BT.SUPERMAGNETMANHELMET" xml:space="preserve">
+		<value>CASCO UOMO SUPER MAGENT</value>
+	</data>
+	<data name="BT.SUPERMETALMAN" xml:space="preserve">
+		<value>SUPER METAL MAN</value>
+	</data>
+	<data name="BT.SUPERPATRIOTBUDDY" xml:space="preserve">
+		<value>PATRIOT SUPER BUDDY</value>
+	</data>
+	<data name="BT.SUPERPATRIOTSHIELD" xml:space="preserve">
+		<value>PATRIOT SUPER SHIELD</value>
+	</data>
+	<data name="BT.SUPERSIDEKICKBUDDY" xml:space="preserve">
+		<value>SIDEKICK SUPER BUDDY</value>
+	</data>
+	<data name="BT.SUPERSPEEDYBUDDY" xml:space="preserve">
+		<value>BUDDY SUPER VELOCE</value>
+	</data>
+	<data name="BT.SUPERSWORD" xml:space="preserve">
+		<value>SUPER SPADA</value>
+	</data>
+	<data name="BT.SUPERVILLAINBUDDY" xml:space="preserve">
+		<value>SUPER-VILLAIN BUDDY</value>
+	</data>
+	<data name="BT.THUNDERBUDDY" xml:space="preserve">
+		<value>BUDDY DI TUONO</value>
+	</data>
+	<data name="BT.TIEDYEHAT" xml:space="preserve">
+		<value>TIE DYE CAPPELLO</value>
+	</data>
+	<data name="BT.TIGERSLIPPERS" xml:space="preserve">
+		<value>PANTOFOLE DI TIGRE</value>
+	</data>
+	<data name="BT.TINYRED" xml:space="preserve">
+		<value>PICCOLO ROSSO</value>
+	</data>
+	<data name="BT.TNTcreditsask" xml:space="preserve">
+		<value>Sei sicuro che si desidera utilizzare 1000 crediti per sbloccare il livello di TNT?</value>
+	</data>
+	<data name="BT.tntlevel" xml:space="preserve">
+		<value>Livello di TNT</value>
+	</data>
+	<data name="BT.TOPHAT" xml:space="preserve">
+		<value>CAPPELLO A CILINDRO</value>
+	</data>
+	<data name="BT.toss" xml:space="preserve">
+		<value>Toss</value>
+	</data>
+	<data name="BT.total" xml:space="preserve">
+		<value>totale</value>
+	</data>
+	<data name="BT.transactionfailed" xml:space="preserve">
+		<value>Transazione non riuscita</value>
+	</data>
+	<data name="BT.TRENDYBOOTS" xml:space="preserve">
+		<value>STIVALI ALLA MODA</value>
+	</data>
+	<data name="BT.unlockbuddypong" xml:space="preserve">
+		<value>Sbloccare Buddy Pong</value>
+	</data>
+	<data name="BT.unlocktntlevel" xml:space="preserve">
+		<value>Sbloccare il livello di TNT</value>
+	</data>
+	<data name="BT.unmute" xml:space="preserve">
+		<value>riattivare l'audio</value>
+	</data>
+	<data name="BT.videos" xml:space="preserve">
+		<value>video</value>
+	</data>
+	<data name="BT.WAITRESS" xml:space="preserve">
+		<value>CAMERIERA</value>
+	</data>
+	<data name="BT.winaprize" xml:space="preserve">
+		<value>vincere un premio</value>
+	</data>
+	<data name="BT.windlevel" xml:space="preserve">
+		<value>livello di vento</value>
+	</data>
+	<data name="BT.WOODSWORD" xml:space="preserve">
+		<value>SPADA DI LEGNO</value>
+	</data>
+	<data name="BT.WORKBOOTS" xml:space="preserve">
+		<value>STIVALI DA LAVORO</value>
+	</data>
+	<data name="BT.WRESTLERBUDDY" xml:space="preserve">
+		<value>LOTTATORE BUDDY</value>
+	</data>
+	<data name="BT.YES" xml:space="preserve">
+		<value>SÌ</value>
+	</data>
+	<data name="BT.YETI" xml:space="preserve">
+		<value>YETI</value>
+	</data>
+	<data name="BT.YETIFEET" xml:space="preserve">
+		<value>PIEDI DI YETI</value>
+	</data>
+	<data name="BT.YETIHANDS" xml:space="preserve">
+		<value>MANI DI YETI</value>
+	</data>
+</root>

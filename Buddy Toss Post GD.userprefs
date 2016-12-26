@@ -1,0 +1,50 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/newScreenCaptureShare.cs">
+    <Files>
+      <File FileName="Assets/pointsCollect.js" Line="5" Column="21" />
+      <File FileName="Assets/LeanLocalization/Scripts/LeanLocalization.cs" Line="1" Column="1" />
+      <File FileName="Assets/ScaleAnimCharac.cs" Line="96" Column="27" />
+      <File FileName="Assets/captureScreenshot.cs" Line="1" Column="1" />
+      <File FileName="Assets/newScreenCaptureShare.cs" Line="33" Column="3" />
+      <File FileName="Assets/switchcamera.js" Line="24" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
+            <Node name="Extensions" expanded="True">
+              <Node name="IOSNative" expanded="True">
+                <Node name="xExample" expanded="True">
+                  <Node name="Scripts" expanded="True">
+                    <Node name="Other" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+            <Node name="LeanLocalization" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+            <Node name="newScreenCaptureShare.cs" selected="True" />
+          </Node>
+          <Node name="Assembly-CSharp-firstpass" expanded="True">
+            <Node name="Standard Assets" expanded="True">
+              <Node name="Effects" expanded="True">
+                <Node name="ImageEffects" expanded="True">
+                  <Node name="Scripts" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+          <Node name="Assembly-UnityScript" expanded="True">
+            <Node name="Scripts" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,191 @@
+-debug
+-target:library
+-nowarn:0169
+-out:'Temp/Assembly-CSharp-Editor-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll'
+-r:'Assets/LitJson.dll'
+-r:'Assets/_MKGlowSystem/_Internal/MKGlowSystem.dll'
+-r:'Assets/_MKGlowSystem/_Internal/Editor/MKGlowSystemEditor.dll'
+-r:'Assets/Fabric/Managed/Analytics.dll'
+-r:'Assets/Fabric/Managed/Validator.dll'
+-r:'Assets/JMO Assets/Editor/JMOAssets.dll'
+-r:'Assets/OneSignal/Platforms/OneSignalSDK_WP80.dll'
+-r:'Assets/OneSignal/Platforms/OneSignalSDK_WP_WNS.dll'
+-r:'Assets/Plugins/GoogleAdsWP8.dll'
+-r:'Assets/Plugins/VungleSDKProxy.dll'
+-r:'Assets/Plugins/WP8Native.dll'
+-r:'Assets/Plugins/WP8PopUps.dll'
+-r:'Assets/Plugins/WSANative.dll'
+-r:'Assets/Plugins/Editor/UnitySocial/Libraries/UnitySocialXcode.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Common.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Editor.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Security.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Stores.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll'
+-r:'Assets/Plugins/UnityPurchasing/winrt/winrt.dll'
+-r:'Assets/SmartLocalization/SmartLocalization_Runtime.dll'
+-r:'Assets/SmartLocalization/Editor/SmartLocalization_Editor.dll'
+-r:'Assets/SmartLocalization/Scripts/Editor/ThirdParty/CSVHelper/CsvHelper.dll'
+-r:'Assets/WellFired/shared/Compiled/Editor/sharedEditor.dll'
+-r:'Assets/WellFired/shared/Compiled/Runtime/sharedRuntime.dll'
+-r:'Assets/WellFired/urecord/Compiled/Editor/urecordEditor.dll'
+-r:'Assets/WellFired/urecord/Compiled/Runtime/urecordRuntime.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll'
+-r:'/Applications/Unity/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll'
+-r:'/Applications/Unity/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_3_5
+-define:UNITY_5_3
+-define:UNITY_5
+-define:UNITY_PURCHASING
+-define:UNITY_ANALYTICS
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_SPRITE_POLYGON
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:ENABLE_EDITOR_TESTS_RUNNER
+-define:UNITY_ANDROID
+-define:UNITY_ANDROID_API
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_EGL
+-define:ENABLE_NETWORK
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_LOG_MIXED_STACKTRACE
+-define:ENABLE_UNITYWEBREQUEST
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_OSX
+-define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
+-define:ENABLE_DUCK_TYPING
+-define:CROSS_PLATFORM_INPUT
+-define:MOBILE_INPUT
+'Assets/Plugins/Editor/UnitySocial/Scripts/UnitySocialPostprocessor.cs'
+'Assets/Plugins/Editor/UnitySocial/Scripts/UnitySocialSettingsEditor.cs'
+'Assets/Plugins/StansAssets/Bundles/UltimateMobile/Scripts/Editor/UMEditorMenu.cs'
+'Assets/Plugins/StansAssets/Bundles/UltimateMobile/Scripts/Editor/UMSettingEditor.cs'
+'Assets/Plugins/StansAssets/Bundles/UltimateMobile/Scripts/Editor/UM_Init.cs'
+'Assets/Plugins/StansAssets/Modules/AmazonNative/Amazon/Editor/AMN_PostProcess.cs'
+'Assets/Plugins/StansAssets/Modules/AmazonNative/Amazon/Editor/AmazonNativeSettingsEditor.cs'
+'Assets/Plugins/StansAssets/Modules/AndroidNative/Scripts/Editor/AndroidNativeInit.cs'
+'Assets/Plugins/StansAssets/Modules/AndroidNative/Scripts/Editor/AndroidNativeMenu.cs'
+'Assets/Plugins/StansAssets/Modules/AndroidNative/Scripts/Editor/AndroidNativePostProcess.cs'
+'Assets/Plugins/StansAssets/Modules/AndroidNative/Scripts/Editor/AndroidNativeSettingsEditor.cs'
+'Assets/Plugins/StansAssets/Modules/AndroidNative/Scripts/Editor/Enum/AN_API_NAME.cs'
+'Assets/Plugins/StansAssets/Modules/AndroidNative/Scripts/Editor/Enum/AN_Bool.cs'
+'Assets/Plugins/StansAssets/Modules/AndroidNative/Scripts/Editor/Social/SocialPlatfromInit.cs'
+'Assets/Plugins/StansAssets/Modules/AndroidNative/Scripts/Editor/Social/SocialPlatfromSettingsEditor.cs'
+'Assets/Plugins/StansAssets/Modules/AndroidNative/Scripts/Editor/Social/SocialPlatfromSettingsHelper.cs'
+'Assets/Plugins/StansAssets/Modules/GoogleAnalytics/Editor/GA_Menu.cs'
+'Assets/Plugins/StansAssets/Modules/GoogleAnalytics/Editor/GA_Postprocess.cs'
+'Assets/Plugins/StansAssets/Modules/GoogleAnalytics/Editor/GA_SettingsEditor.cs'
+'Assets/Plugins/StansAssets/Modules/GoogleMobileAd/Scripts/Editor/GoogleMobileAdMenu.cs'
+'Assets/Plugins/StansAssets/Modules/GoogleMobileAd/Scripts/Editor/GoogleMobileAdPostProcess.cs'
+'Assets/Plugins/StansAssets/Modules/GoogleMobileAd/Scripts/Editor/GoogleMobileAdSettingsEditor.cs'
+'Assets/Plugins/StansAssets/Modules/GoogleMobileAd/Scripts/Editor/ScarletPostProcessor.cs'
+'Assets/Plugins/StansAssets/Modules/IOSDeploy/Scripts/Editor/ISD_Menu.cs'
+'Assets/Plugins/StansAssets/Modules/IOSDeploy/Scripts/Editor/ISD_PostProcess.cs'
+'Assets/Plugins/StansAssets/Modules/IOSDeploy/Scripts/Editor/ISD_SettingsEditor.cs'
+'Assets/Plugins/StansAssets/Modules/IOSNative/Editor/IOSNativeMenu.cs'
+'Assets/Plugins/StansAssets/Modules/IOSNative/Editor/IOSNativePostProcess.cs'
+'Assets/Plugins/StansAssets/Modules/IOSNative/Editor/IOSNativeSettingsEditor.cs'
+'Assets/Plugins/StansAssets/Modules/ManifestManager/Editor/AMM_AddPermissionDialog.cs'
+'Assets/Plugins/StansAssets/Modules/ManifestManager/Editor/AMM_AddPropertyDialog.cs'
+'Assets/Plugins/StansAssets/Modules/ManifestManager/Editor/AMM_AddValueDialog.cs'
+'Assets/Plugins/StansAssets/Modules/ManifestManager/Editor/AMM_ManifestManagerMenu.cs'
+'Assets/Plugins/StansAssets/Modules/ManifestManager/Editor/AMM_ManifestManagerWindow.cs'
+'Assets/Plugins/StansAssets/Modules/MobileNativePopUps/Editor/MNP_PlatformMenu.cs'
+'Assets/Plugins/StansAssets/Modules/MobileNativePopUps/Editor/MNP_PlatformSettingsEditor.cs'
+'Assets/Plugins/StansAssets/Modules/WP8Native/Editor/WP8NativeSettingsEditor.cs'
+'Assets/Plugins/StansAssets/Modules/WP8Native/Editor/WP8NativeSettingsEditorMenu.cs'
+'Assets/Plugins/StansAssets/Support/Common/Editor/Scripts/SA_Bool.cs'
+'Assets/Plugins/StansAssets/Support/Common/Editor/Scripts/SA_Instalation.cs'
+'Assets/Plugins/StansAssets/Support/Common/Editor/Scripts/SA_RemoveTool.cs'
+'Assets/Plugins/StansAssets/Support/Common/Editor/Scripts/SA_Tools.cs'
+'Assets/Plugins/StansAssets/Support/Common/Editor/Scripts/SA_VersionsManager.cs'
+'Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPackageGenerator.cs'
+'Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildFile.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXBuildPhase.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXDictionary.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXFileReference.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXGroup.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXList.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXObject.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXParser.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/PBXProject.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCBuildConfiguration.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCConfigurationList.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCFileOperationQueue.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCMod.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCProject.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCSourceFile.cs'
+'Assets/Standard Assets/Editor/UnityAds/XCodeEditor/XCTarget.cs'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/2.0/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/2.0/System.Xml.Linq.dll'

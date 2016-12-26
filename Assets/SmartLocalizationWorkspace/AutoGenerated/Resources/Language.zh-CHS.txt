@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="BT.AFRO" xml:space="preserve">
+		<value>非洲裔</value>
+	</data>
+	<data name="BT.BADGER" xml:space="preserve">
+		<value>獾</value>
+	</data>
+	<data name="BT.BASEBALLBAT" xml:space="preserve">
+		<value>棒球棍</value>
+	</data>
+	<data name="BT.BASKETBALL" xml:space="preserve">
+		<value>篮球</value>
+	</data>
+	<data name="BT.BEACHBABE" xml:space="preserve">
+		<value>沙滩宝贝</value>
+	</data>
+	<data name="BT.bestscoretnt" xml:space="preserve">
+		<value>我最好的成绩，在 TNT 水平</value>
+	</data>
+	<data name="BT.bestscorewind" xml:space="preserve">
+		<value>我最好的成绩</value>
+	</data>
+	<data name="BT.besttimepong" xml:space="preserve">
+		<value>我在好友 Pong 中的最佳时间是</value>
+	</data>
+	<data name="BT.BIGGREENBUDDY" xml:space="preserve">
+		<value>大绿色好友</value>
+	</data>
+	<data name="BT.BMXBILLY" xml:space="preserve">
+		<value>小轮车比利</value>
+	</data>
+	<data name="BT.BOUNTYHUNTER" xml:space="preserve">
+		<value>赏金猎人</value>
+	</data>
+	<data name="BT.BOUNTYHUNTERHELMET" xml:space="preserve">
+		<value>赏金猎人头盔</value>
+	</data>
+	<data name="BT.BOXERBUDDY" xml:space="preserve">
+		<value>拳击手的好友</value>
+	</data>
+	<data name="BT.BOXINGGLOVES" xml:space="preserve">
+		<value>拳击手套</value>
+	</data>
+	<data name="BT.BOZOBUDDY" xml:space="preserve">
+		<value>博佐巴迪</value>
+	</data>
+	<data name="BT.BPcreditask" xml:space="preserve">
+		<value>你确定你想要使用 1000年学分来解锁好友乒乓？</value>
+	</data>
+	<data name="BT.buddy" xml:space="preserve">
+		<value>好友</value>
+	</data>
+	<data name="BT.BUDDYJEFFERSON" xml:space="preserve">
+		<value>巴迪杰斐逊</value>
+	</data>
+	<data name="BT.buddypong" xml:space="preserve">
+		<value>好友乒乓</value>
+	</data>
+	<data name="BT.buddytoss" xml:space="preserve">
+		<value>巴迪折腾</value>
+	</data>
+	<data name="BT.bullseye" xml:space="preserve">
+		<value>靶心</value>
+	</data>
+	<data name="BT.BUSINESSBUDDY" xml:space="preserve">
+		<value>业务伙伴</value>
+	</data>
+	<data name="BT.claimgift" xml:space="preserve">
+		<value>声称你的免费礼物 ！</value>
+	</data>
+	<data name="BT.CLASSYSHOES" xml:space="preserve">
+		<value>优雅的鞋</value>
+	</data>
+	<data name="BT.CLAWS" xml:space="preserve">
+		<value>利爪</value>
+	</data>
+	<data name="BT.CLOWNSHOES" xml:space="preserve">
+		<value>小丑鞋</value>
+	</data>
+	<data name="BT.congratulations" xml:space="preserve">
+		<value>祝贺</value>
+	</data>
+	<data name="BT.COWBOYHAT" xml:space="preserve">
+		<value>牛仔帽</value>
+	</data>
+	<data name="BT.credits" xml:space="preserve">
+		<value>学分</value>
+	</data>
+	<data name="BT.creditswon" xml:space="preserve">
+		<value>学分赢了 ！</value>
+	</data>
+	<data name="BT.CROC" xml:space="preserve">
+		<value>鳄鱼</value>
+	</data>
+	<data name="BT.CROWN" xml:space="preserve">
+		<value>皇冠</value>
+	</data>
+	<data name="BT.cupsleft" xml:space="preserve">
+		<value>左杯</value>
+	</data>
+	<data name="BT.CUSTOMBUDDY" xml:space="preserve">
+		<value>自定义好友</value>
+	</data>
+	<data name="BT.DEMONPOOL" xml:space="preserve">
+		<value>DEMONPOOL</value>
+	</data>
+	<data name="BT.DOCTORBUDDY" xml:space="preserve">
+		<value>医生的好友</value>
+	</data>
+	<data name="BT.DOUBLESECRETAGENT" xml:space="preserve">
+		<value>双秘密特工</value>
+	</data>
+	<data name="BT.DRIFTER" xml:space="preserve">
+		<value>流浪汉</value>
+	</data>
+	<data name="BT.DUNCEHAT" xml:space="preserve">
+		<value>笨人帽子</value>
+	</data>
+	<data name="BT.earn" xml:space="preserve">
+		<value>赚到</value>
+	</data>
+	<data name="BT.edit" xml:space="preserve">
+		<value>编辑</value>
+	</data>
+	<data name="BT.ELF" xml:space="preserve">
+		<value>小精灵</value>
+	</data>
+	<data name="BT.ELFHAT" xml:space="preserve">
+		<value>小精灵帽子</value>
+	</data>
+	<data name="BT.ELFSHOES" xml:space="preserve">
+		<value>小精灵鞋</value>
+	</data>
+	<data name="BT.error" xml:space="preserve">
+		<value>错误</value>
+	</data>
+	<data name="BT.EVILEMPEROR" xml:space="preserve">
+		<value>邪恶的皇帝</value>
+	</data>
+	<data name="BT.EVILVILLAINMASK" xml:space="preserve">
+		<value>邪恶反派面具</value>
+	</data>
+	<data name="BT.facecamera" xml:space="preserve">
+		<value>面对摄影机</value>
+	</data>
+	<data name="BT.FANFINGER" xml:space="preserve">
+		<value>风扇的手指</value>
+	</data>
+	<data name="BT.fieldgoal" xml:space="preserve">
+		<value>外地的目标</value>
+	</data>
+	<data name="BT.FIREMANBUDDY" xml:space="preserve">
+		<value>消防员巴迪</value>
+	</data>
+	<data name="BT.FOOTBALL" xml:space="preserve">
+		<value>足球</value>
+	</data>
+	<data name="BT.FOOTBALLBUDDY" xml:space="preserve">
+		<value>足球的好友</value>
+	</data>
+	<data name="BT.FOOTBALLHELMET" xml:space="preserve">
+		<value>足球头盔</value>
+	</data>
+	<data name="BT.freegift" xml:space="preserve">
+		<value>免费的礼物</value>
+	</data>
+	<data name="BT.FUTUREBOARD" xml:space="preserve">
+		<value>未来的委员会</value>
+	</data>
+	<data name="BT.FUTUREBUDDY" xml:space="preserve">
+		<value>未来的好友</value>
+	</data>
+	<data name="BT.FUTURESHOES" xml:space="preserve">
+		<value>未来的鞋子</value>
+	</data>
+	<data name="BT.gameover" xml:space="preserve">
+		<value>游戏结束</value>
+	</data>
+	<data name="BT.GASMASK" xml:space="preserve">
+		<value>防毒面具</value>
+	</data>
+	<data name="BT.giftin" xml:space="preserve">
+		<value>在礼物</value>
+	</data>
+	<data name="BT.GOLFCLUB" xml:space="preserve">
+		<value>高尔夫俱乐部</value>
+	</data>
+	<data name="BT.GRANDMASTERMASK" xml:space="preserve">
+		<value>大师的面具</value>
+	</data>
+	<data name="BT.HAMMER" xml:space="preserve">
+		<value>锤子</value>
+	</data>
+	<data name="BT.HAWKSMASK" xml:space="preserve">
+		<value>鹰的面具</value>
+	</data>
+	<data name="BT.HIPSTERS" xml:space="preserve">
+		<value>赶时髦的人</value>
+	</data>
+	<data name="BT.HORSEFACE" xml:space="preserve">
+		<value>马脸</value>
+	</data>
+	<data name="BT.ICESKATES" xml:space="preserve">
+		<value>溜冰鞋</value>
+	</data>
+	<data name="BT.JACKROGER" xml:space="preserve">
+		<value>杰克罗杰</value>
+	</data>
+	<data name="BT.JANE" xml:space="preserve">
+		<value>简</value>
+	</data>
+	<data name="BT.JOHN" xml:space="preserve">
+		<value>约翰 ·</value>
+	</data>
+	<data name="BT.JOHNNYBASEBALL" xml:space="preserve">
+		<value>约翰尼 · 棒球</value>
+	</data>
+	<data name="BT.justunlocked" xml:space="preserve">
+		<value>只被解锁</value>
+	</data>
+	<data name="BT.KIDMAGIC" xml:space="preserve">
+		<value>孩子魔术</value>
+	</data>
+	<data name="BT.KNIGHT" xml:space="preserve">
+		<value>骑士</value>
+	</data>
+	<data name="BT.KNIGHTSHELMET" xml:space="preserve">
+		<value>骑士的头盔</value>
+	</data>
+	<data name="BT.LANCE" xml:space="preserve">
+		<value>兰斯</value>
+	</data>
+	<data name="BT.LANCEMOONWALKER" xml:space="preserve">
+		<value>兰斯第</value>
+	</data>
+	<data name="BT.language" xml:space="preserve">
+		<value>语言</value>
+	</data>
+	<data name="BT.level" xml:space="preserve">
+		<value>水平</value>
+	</data>
+	<data name="BT.LUCHADOR" xml:space="preserve">
+		<value>LUCHADOR</value>
+	</data>
+	<data name="BT.LUITHECARPENTER" xml:space="preserve">
+		<value>莱尼木匠</value>
+	</data>
+	<data name="BT.MACHETE" xml:space="preserve">
+		<value>弯刀</value>
+	</data>
+	<data name="BT.MADCHEMIST" xml:space="preserve">
+		<value>疯狂的化学家</value>
+	</data>
+	<data name="BT.MAGICWAND" xml:space="preserve">
+		<value>魔术棒</value>
+	</data>
+	<data name="BT.MANNYTHEPLUMBER" xml:space="preserve">
+		<value>曼尼修水管的工人</value>
+	</data>
+	<data name="BT.MARLEY" xml:space="preserve">
+		<value>马利 · 弗林</value>
+	</data>
+	<data name="BT.MASKMAN" xml:space="preserve">
+		<value>面具的男人</value>
+	</data>
+	<data name="BT.MEANONE" xml:space="preserve">
+		<value>意思是一个人</value>
+	</data>
+	<data name="BT.MISTERFLICK" xml:space="preserve">
+		<value>先生看电影</value>
+	</data>
+	<data name="BT.MONSTERHANDS" xml:space="preserve">
+		<value>怪物的手</value>
+	</data>
+	<data name="BT.MOVIESTAR" xml:space="preserve">
+		<value>电影明星</value>
+	</data>
+	<data name="BT.mute" xml:space="preserve">
+		<value>静音</value>
+	</data>
+	<data name="BT.nicetoss" xml:space="preserve">
+		<value>你刚刚得到了毁了......好折腾 ！</value>
+	</data>
+	<data name="BT.NIGHTMAREBUDDY" xml:space="preserve">
+		<value>噩梦的好友</value>
+	</data>
+	<data name="BT.NO" xml:space="preserve">
+		<value>没有</value>
+	</data>
+	<data name="BT.NOSHADOWS" xml:space="preserve">
+		<value>关闭阴影</value>
+	</data>
+	<data name="BT.notenoughcredits" xml:space="preserve">
+		<value>没有足够的学分</value>
+	</data>
+	<data name="BT.OFFICERJOE" xml:space="preserve">
+		<value>主任乔</value>
+	</data>
+	<data name="BT.ONEEYE" xml:space="preserve">
+		<value>一只眼睛</value>
+	</data>
+	<data name="BT.pausemenu" xml:space="preserve">
+		<value>暂停菜单</value>
+	</data>
+	<data name="BT.PHASERGUN" xml:space="preserve">
+		<value>相位枪</value>
+	</data>
+	<data name="BT.PRANKSTERBUDDY" xml:space="preserve">
+		<value>恶作剧的好友</value>
+	</data>
+	<data name="BT.PREPPYBUDDY" xml:space="preserve">
+		<value>预科生的好友</value>
+	</data>
+	<data name="BT.PRESIDENTBUDDY" xml:space="preserve">
+		<value>总统的好友</value>
+	</data>
+	<data name="BT.PRINCESS" xml:space="preserve">
+		<value>公主</value>
+	</data>
+	<data name="BT.PSYCHOMAN" xml:space="preserve">
+		<value>变态的男人</value>
+	</data>
+	<data name="BT.RAPPERBUDDY" xml:space="preserve">
+		<value>说唱歌手巴迪</value>
+	</data>
+	<data name="BT.ratelater" xml:space="preserve">
+		<value>后来率</value>
+	</data>
+	<data name="BT.ratenever" xml:space="preserve">
+		<value>永远不会提醒我</value>
+	</data>
+	<data name="BT.ratenow" xml:space="preserve">
+		<value>现在率</value>
+	</data>
+	<data name="BT.ratingbody" xml:space="preserve">
+		<value>像我们的游戏吗？</value>
+	</data>
+	<data name="BT.REBELBRO" xml:space="preserve">
+		<value>叛军人权法</value>
+	</data>
+	<data name="BT.record" xml:space="preserve">
+		<value>记录</value>
+	</data>
+	<data name="BT.removeads" xml:space="preserve">
+		<value>删除广告</value>
+	</data>
+	<data name="BT.restorecomplete" xml:space="preserve">
+		<value>还原完成</value>
+	</data>
+	<data name="BT.restorepurchases" xml:space="preserve">
+		<value>恢复购买</value>
+	</data>
+	<data name="BT.RIOTCOP" xml:space="preserve">
+		<value>防暴警察</value>
+	</data>
+	<data name="BT.ROADWORKER" xml:space="preserve">
+		<value>道路工人</value>
+	</data>
+	<data name="BT.ROBBERBUDDY" xml:space="preserve">
+		<value>强盗的好友</value>
+	</data>
+	<data name="BT.ROBOT" xml:space="preserve">
+		<value>机器人</value>
+	</data>
+	<data name="BT.ROLLERBLADES" xml:space="preserve">
+		<value>旱冰鞋</value>
+	</data>
+	<data name="BT.RUSTY" xml:space="preserve">
+		<value>生锈</value>
+	</data>
+	<data name="BT.SAIS" xml:space="preserve">
+		<value>高级国际研究学院</value>
+	</data>
+	<data name="BT.SANTA" xml:space="preserve">
+		<value>圣诞老人</value>
+	</data>
+	<data name="BT.SANTAHAT" xml:space="preserve">
+		<value>圣诞老人的帽子</value>
+	</data>
+	<data name="BT.score" xml:space="preserve">
+		<value>得分</value>
+	</data>
+	<data name="BT.select" xml:space="preserve">
+		<value>选择</value>
+	</data>
+	<data name="BT.SHADOWS" xml:space="preserve">
+		<value>上的阴影</value>
+	</data>
+	<data name="BT.share" xml:space="preserve">
+		<value>共享</value>
+	</data>
+	<data name="BT.SHERIFFBUDDY" xml:space="preserve">
+		<value>警长巴迪</value>
+	</data>
+	<data name="BT.SHORTHAT" xml:space="preserve">
+		<value>短的帽子</value>
+	</data>
+	<data name="BT.SKATEBOARD" xml:space="preserve">
+		<value>滑板</value>
+	</data>
+	<data name="BT.SKIPOLES" xml:space="preserve">
+		<value>滑雪杆</value>
+	</data>
+	<data name="BT.SKIS" xml:space="preserve">
+		<value>滑雪板</value>
+	</data>
+	<data name="BT.SNOWBOARD" xml:space="preserve">
+		<value>单板滑雪</value>
+	</data>
+	<data name="BT.sorrynotenough" xml:space="preserve">
+		<value>抱歉，您没有足够的学分。</value>
+	</data>
+	<data name="BT.SOULMAN" xml:space="preserve">
+		<value>灵魂的人</value>
+	</data>
+	<data name="BT.SPACEDOGMASK" xml:space="preserve">
+		<value>太空狗面具</value>
+	</data>
+	<data name="BT.SPACEGUARDIAN" xml:space="preserve">
+		<value>空间守护者</value>
+	</data>
+	<data name="BT.SPACEGUARDIANHELMET" xml:space="preserve">
+		<value>空间守护头盔</value>
+	</data>
+	<data name="BT.SPACEVILLAINHELMET" xml:space="preserve">
+		<value>空间的恶棍头盔</value>
+	</data>
+	<data name="BT.stoprecordingvideo" xml:space="preserve">
+		<value>停止录制视频</value>
+	</data>
+	<data name="BT.success" xml:space="preserve">
+		<value>成功</value>
+	</data>
+	<data name="BT.SUPERBUGMAN" xml:space="preserve">
+		<value>超级 BUG 人</value>
+	</data>
+	<data name="BT.SUPERGALACTIC" xml:space="preserve">
+		<value>超级银河好友 2 X 学分和 1000年免费学分与购买</value>
+	</data>
+	<data name="BT.SUPERGLOWSTICK" xml:space="preserve">
+		<value>超级发光棒</value>
+	</data>
+	<data name="BT.SUPERGLOWSTICKH" xml:space="preserve">
+		<value>超级发光棒英雄</value>
+	</data>
+	<data name="BT.SUPERGUY" xml:space="preserve">
+		<value>超级的家伙</value>
+	</data>
+	<data name="BT.SUPERHAWKMAN" xml:space="preserve">
+		<value>超级鹰人</value>
+	</data>
+	<data name="BT.SUPERMAGNETMAN" xml:space="preserve">
+		<value>超级磁铁人</value>
+	</data>
+	<data name="BT.SUPERMAGNETMANHELMET" xml:space="preserve">
+		<value>超级永磁体人头盔</value>
+	</data>
+	<data name="BT.SUPERMETALMAN" xml:space="preserve">
+		<value>超级金属人</value>
+	</data>
+	<data name="BT.SUPERPATRIOTBUDDY" xml:space="preserve">
+		<value>超级爱国者巴迪</value>
+	</data>
+	<data name="BT.SUPERPATRIOTSHIELD" xml:space="preserve">
+		<value>爱国者超级盾牌</value>
+	</data>
+	<data name="BT.SUPERSIDEKICKBUDDY" xml:space="preserve">
+		<value>超级死党好友</value>
+	</data>
+	<data name="BT.SUPERSPEEDYBUDDY" xml:space="preserve">
+		<value>超级迅速的好友</value>
+	</data>
+	<data name="BT.SUPERSWORD" xml:space="preserve">
+		<value>超级剑</value>
+	</data>
+	<data name="BT.SUPERVILLAINBUDDY" xml:space="preserve">
+		<value>超级大坏蛋巴迪</value>
+	</data>
+	<data name="BT.THUNDERBUDDY" xml:space="preserve">
+		<value>雷霆的好友</value>
+	</data>
+	<data name="BT.TIEDYEHAT" xml:space="preserve">
+		<value>领带染料帽子</value>
+	</data>
+	<data name="BT.TIGERSLIPPERS" xml:space="preserve">
+		<value>老虎拖鞋</value>
+	</data>
+	<data name="BT.TINYRED" xml:space="preserve">
+		<value>小小的红色</value>
+	</data>
+	<data name="BT.TNTcreditsask" xml:space="preserve">
+		<value>你确定你想要使用 1000年学分来解锁 TNT 水平？</value>
+	</data>
+	<data name="BT.tntlevel" xml:space="preserve">
+		<value>TNT 水平</value>
+	</data>
+	<data name="BT.TOPHAT" xml:space="preserve">
+		<value>高顶大礼帽</value>
+	</data>
+	<data name="BT.toss" xml:space="preserve">
+		<value>折腾</value>
+	</data>
+	<data name="BT.total" xml:space="preserve">
+		<value>总计</value>
+	</data>
+	<data name="BT.transactionfailed" xml:space="preserve">
+		<value>交易失败</value>
+	</data>
+	<data name="BT.TRENDYBOOTS" xml:space="preserve">
+		<value>时髦的靴子</value>
+	</data>
+	<data name="BT.unlockbuddypong" xml:space="preserve">
+		<value>解锁的好友乒乓</value>
+	</data>
+	<data name="BT.unlocktntlevel" xml:space="preserve">
+		<value>解锁 TNT 水平</value>
+	</data>
+	<data name="BT.unmute" xml:space="preserve">
+		<value>将取消静音</value>
+	</data>
+	<data name="BT.videos" xml:space="preserve">
+		<value>视频</value>
+	</data>
+	<data name="BT.WAITRESS" xml:space="preserve">
+		<value>女服务员</value>
+	</data>
+	<data name="BT.winaprize" xml:space="preserve">
+		<value>赢奖</value>
+	</data>
+	<data name="BT.windlevel" xml:space="preserve">
+		<value>风级</value>
+	</data>
+	<data name="BT.WOODSWORD" xml:space="preserve">
+		<value>木剑</value>
+	</data>
+	<data name="BT.WORKBOOTS" xml:space="preserve">
+		<value>工作靴</value>
+	</data>
+	<data name="BT.WRESTLERBUDDY" xml:space="preserve">
+		<value>摔跤手巴迪</value>
+	</data>
+	<data name="BT.YES" xml:space="preserve">
+		<value>是的</value>
+	</data>
+	<data name="BT.YETI" xml:space="preserve">
+		<value>雪人</value>
+	</data>
+	<data name="BT.YETIFEET" xml:space="preserve">
+		<value>雪人的脚</value>
+	</data>
+	<data name="BT.YETIHANDS" xml:space="preserve">
+		<value>雪人手</value>
+	</data>
+</root>

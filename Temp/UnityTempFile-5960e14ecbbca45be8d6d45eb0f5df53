@@ -1,0 +1,268 @@
+-debug
+-target:library
+-nowarn:0169
+-out:'Temp/Assembly-CSharp.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityPurchasing/UnityEngine.Purchasing.dll'
+-r:'Assets/LitJson.dll'
+-r:'Assets/_MKGlowSystem/_Internal/MKGlowSystem.dll'
+-r:'Assets/Fabric/Managed/Analytics.dll'
+-r:'Assets/Fabric/Managed/Validator.dll'
+-r:'Assets/OneSignal/Platforms/OneSignalSDK_WP80.dll'
+-r:'Assets/OneSignal/Platforms/OneSignalSDK_WP_WNS.dll'
+-r:'Assets/Plugins/GoogleAdsWP8.dll'
+-r:'Assets/Plugins/VungleSDKProxy.dll'
+-r:'Assets/Plugins/WP8Native.dll'
+-r:'Assets/Plugins/WP8PopUps.dll'
+-r:'Assets/Plugins/WSANative.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Common.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Editor.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Security.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Stores.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll'
+-r:'Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll'
+-r:'Assets/Plugins/UnityPurchasing/winrt/winrt.dll'
+-r:'Assets/SmartLocalization/SmartLocalization_Runtime.dll'
+-r:'Assets/WellFired/shared/Compiled/Runtime/sharedRuntime.dll'
+-r:'Assets/WellFired/urecord/Compiled/Runtime/urecordRuntime.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_3_5
+-define:UNITY_5_3
+-define:UNITY_5
+-define:UNITY_PURCHASING
+-define:UNITY_ANALYTICS
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_SPRITE_POLYGON
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:ENABLE_EDITOR_TESTS_RUNNER
+-define:UNITY_ANDROID
+-define:UNITY_ANDROID_API
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_EGL
+-define:ENABLE_NETWORK
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_LOG_MIXED_STACKTRACE
+-define:ENABLE_UNITYWEBREQUEST
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_OSX
+-define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
+-define:CROSS_PLATFORM_INPUT
+-define:MOBILE_INPUT
+'Assets/Ads_Nate.cs'
+'Assets/Ads_Nate_archive.cs'
+'Assets/AdvancedPlayerPrefsWindow/DemoScene/GUIView.cs'
+'Assets/AnsersBuddyToss.cs'
+'Assets/BuddyTossJson.cs'
+'Assets/Chartboost/Examples/ChartboostExample/ChartboostExample.cs'
+'Assets/Chartboost/Scripts/CBExternal.cs'
+'Assets/Chartboost/Scripts/CBInPlay.cs'
+'Assets/Chartboost/Scripts/CBJSON.cs'
+'Assets/Chartboost/Scripts/CBSettings.cs'
+'Assets/Chartboost/Scripts/Chartboost.cs'
+'Assets/FX Mega Pack/Scripts/SmoothCameraOrbit.cs'
+'Assets/Fabric/Kits/Answers/Runtime/Answers.cs'
+'Assets/Fabric/Kits/Answers/Runtime/Internal/AnswersAndroidImplementation.cs'
+'Assets/Fabric/Kits/Answers/Runtime/Internal/AnswersAppleImplementation.cs'
+'Assets/Fabric/Kits/Answers/Runtime/Internal/AnswersStubImplementation.cs'
+'Assets/Fabric/Kits/Answers/Runtime/Internal/IAnswers.cs'
+'Assets/Fabric/Kits/Crashlytics/Runtime/Crashlytics.cs'
+'Assets/Fabric/Kits/Crashlytics/Runtime/CrashlyticsInit.cs'
+'Assets/Fabric/Kits/Crashlytics/Runtime/Internal/AndroidImpl.cs'
+'Assets/Fabric/Kits/Crashlytics/Runtime/Internal/IOSImpl.cs'
+'Assets/Fabric/Kits/Crashlytics/Runtime/Internal/Impl.cs'
+'Assets/Fabric/Runtime/Fabric.cs'
+'Assets/Fabric/Runtime/FabricInit.cs'
+'Assets/Fabric/Runtime/FabricUtils.cs'
+'Assets/Fabric/Runtime/Internal/AndroidImpl.cs'
+'Assets/Fabric/Runtime/Internal/IOSImpl.cs'
+'Assets/Fabric/Runtime/Internal/Impl.cs'
+'Assets/Fabric/ThirdParty/MiniJSON.cs'
+'Assets/Fantasy Skybox FREE/Scripts/FSPlayer.cs'
+'Assets/GameCenterStart.cs'
+'Assets/HeyPlayManager.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX2_Demo.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_AutoStopLoopedEffect.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_New.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDir.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RandomDirectionTranslate.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_RotateCamera.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/Assets/CFX_Demo_Translate.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/UI/CFX_Demo_GTButton.cs'
+'Assets/JMO Assets/Cartoon FX/Demo/UI/CFX_Demo_GTToggle.cs'
+'Assets/JMO Assets/Cartoon FX/Scripts/CFX2_AutoRotate.cs'
+'Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoDestructShuriken.cs'
+'Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutoRotate.cs'
+'Assets/JMO Assets/Cartoon FX/Scripts/CFX_AutodestructWhenNoChildren.cs'
+'Assets/JMO Assets/Cartoon FX/Scripts/CFX_InspectorHelp.cs'
+'Assets/JMO Assets/Cartoon FX/Scripts/CFX_LightIntensityFade.cs'
+'Assets/JMO Assets/Cartoon FX/Scripts/CFX_ShurikenThreadFix.cs'
+'Assets/JMO Assets/Cartoon FX/Spawn System/CFX_SpawnSystem.cs'
+'Assets/KTAppRaterCompressed/KT/AppRater/AppRaterModel.cs'
+'Assets/KTAppRaterCompressed/KT/AppRater/AppraterScript.cs'
+'Assets/LeanLocalization/Scripts/LeanLanguageNameAttribute.cs'
+'Assets/LeanLocalization/Scripts/LeanLocalization.cs'
+'Assets/LeanLocalization/Scripts/LeanLocalizationLoader.cs'
+'Assets/LeanLocalization/Scripts/LeanLocalizedAudioSource.cs'
+'Assets/LeanLocalization/Scripts/LeanLocalizedBehaviour.cs'
+'Assets/LeanLocalization/Scripts/LeanLocalizedImage.cs'
+'Assets/LeanLocalization/Scripts/LeanLocalizedSpriteRenderer.cs'
+'Assets/LeanLocalization/Scripts/LeanLocalizedText.cs'
+'Assets/LeanLocalization/Scripts/LeanPhrase.cs'
+'Assets/LeanLocalization/Scripts/LeanPhraseNameAttribute.cs'
+'Assets/LeanLocalization/Scripts/LeanTranslation.cs'
+'Assets/LeanTween/Examples/Archived/OldGUIExamplesCS.cs'
+'Assets/LeanTween/Examples/Archived/TestingPunch.cs'
+'Assets/LeanTween/Examples/Archived/TestingRigidbodyCS.cs'
+'Assets/LeanTween/Examples/Scripts/GeneralAdvancedTechniques.cs'
+'Assets/LeanTween/Examples/Scripts/GeneralBasicCS.cs'
+'Assets/LeanTween/Examples/Scripts/GeneralBasics2dCS.cs'
+'Assets/LeanTween/Examples/Scripts/GeneralCameraShake.cs'
+'Assets/LeanTween/Examples/Scripts/GeneralEventsListenersCS.cs'
+'Assets/LeanTween/Examples/Scripts/GeneralSimpleUiCS.cs'
+'Assets/LeanTween/Examples/Scripts/GeneralUISpaceCS.cs'
+'Assets/LeanTween/Examples/Scripts/LogoCinematic.cs'
+'Assets/LeanTween/Examples/Scripts/PathBezier.cs'
+'Assets/LeanTween/Examples/Scripts/PathSpline.cs'
+'Assets/LeanTween/Examples/Scripts/PathSpline2d.cs'
+'Assets/LeanTween/Examples/Scripts/PathSplineEndlessCS.cs'
+'Assets/LeanTween/Examples/Scripts/PathSplinePerformanceCS.cs'
+'Assets/LeanTween/Examples/Scripts/PathSplineTrackCS.cs'
+'Assets/LeanTween/Examples/Scripts/PathSplines.cs'
+'Assets/LeanTween/Examples/Scripts/TestingAllCS.cs'
+'Assets/LeanTween/Examples/Scripts/TestingUnitTests.cs'
+'Assets/LeanTween/Testing/TestingColorTweening.cs'
+'Assets/LeanTween/Testing/TestingIssue.cs'
+'Assets/LeanTween/Testing/TestingIssue2.cs'
+'Assets/Level Menu 2D/Plugins/Pixelplacement/iTween/iTween.cs'
+'Assets/Level Menu 2D/Scripts/ClickTouchScript.cs'
+'Assets/Level Menu 2D/Scripts/Demo Scripts/ABClickScript.cs'
+'Assets/Level Menu 2D/Scripts/Demo Scripts/AutoInitScript.cs'
+'Assets/Level Menu 2D/Scripts/Demo Scripts/BackToMenuScript.cs'
+'Assets/Level Menu 2D/Scripts/Demo Scripts/ColorSwitcherScript.cs'
+'Assets/Level Menu 2D/Scripts/Demo Scripts/DemoSelectorClicker.cs'
+'Assets/Level Menu 2D/Scripts/Demo Scripts/SwipeDetector.cs'
+'Assets/Level Menu 2D/Scripts/Demo Scripts/TRClicker.cs'
+'Assets/Level Menu 2D/Scripts/Demo Scripts/VerticalDemoClicker.cs'
+'Assets/Level Menu 2D/Scripts/LevelMenu2D.cs'
+'Assets/Level Menu 2D/SingletonPerfect/Singleton.cs'
+'Assets/LevelClick.cs'
+'Assets/MissionsController.cs'
+'Assets/NateCameraPlugin/Scripts/FDViewController.cs'
+'Assets/NateCameraPlugin/Scripts/Manager.cs'
+'Assets/NateCameraPlugin/Scripts/ReceiveImage.cs'
+'Assets/OneSignal/Example/GameControllerExample.cs'
+'Assets/OneSignal/src/GameThrive.cs'
+'Assets/OneSignal/src/MiniJSON.cs'
+'Assets/OneSignal/src/OneSignal.cs'
+'Assets/OneSignal/src/OneSignalAndroid.cs'
+'Assets/OneSignal/src/OneSignalIOS.cs'
+'Assets/OneSignal/src/OneSignalPlatform.cs'
+'Assets/OneSignal/src/OneSignalWP80.cs'
+'Assets/OneSignal/src/OneSignalWPWNS.cs'
+'Assets/OneSignalBT.cs'
+'Assets/PopUpManager.cs'
+'Assets/Recipe.cs'
+'Assets/ScaleAnimCharac.cs'
+'Assets/ScaleAnimCharacArchived.cs'
+'Assets/Scripts/AdColonyAdManager/ADCVideoZone.cs'
+'Assets/Scripts/AdColonyAdManager/ADCVideoZoneType.cs'
+'Assets/SmartLocalization/Examples/LoadAllLanguages.cs'
+'Assets/SmartLocalization/Scripts/NGUI/SL_NGUILabel.cs'
+'Assets/SmartLocalization/Scripts/NGUI/SL_NGUISpriteAtlas.cs'
+'Assets/SmartLocalization/Scripts/NGUI/SL_NGUISpriteName.cs'
+'Assets/SmartLocalization/Scripts/uGUI/LocalizedText.cs'
+'Assets/SmartLocalization_Nate.cs'
+'Assets/StartAd.cs'
+'Assets/TimeReward.cs'
+'Assets/TimeRewardArch.cs'
+'Assets/UniversalRateNate.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/IO/OtherIOHelper.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/IO/WebPlayerIOHelper.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/IO/WindowsAppStoreIOHelper.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/OpenInExplorer/IOpen.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/OpenInExplorer/LinuxOpen.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/OpenInExplorer/OSXOpen.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/OpenInExplorer/OpenFactory.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/OpenInExplorer/WinOpen.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/Reflection/OtherReflectionHelper.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/Reflection/WindowsAppStoreReflectionHelper.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/RuntimeProcessRunner.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/UnityEditor/EditorUnityEditorHelper.cs'
+'Assets/WellFired/shared/Uncompiled/Runtime/Platform Specific/UnityEditor/RuntimeUnityEditorHelper.cs'
+'Assets/_MKGlowSystem/_Demo/Code/MK_DemoControl.cs'
+'Assets/_MKGlowSystem/_Demo/Code/MK_RotateObject.cs'
+'Assets/adcolony/NatePlay.cs'
+'Assets/adcolony/PlayV4VCAdButtonNate.cs'
+'Assets/adjustTextBtnC.cs'
+'Assets/animateVignette.cs'
+'Assets/captureScreenshot.cs'
+'Assets/enableSnowStart.cs'
+'Assets/iosNativePriceListener.cs'
+'Assets/newCharacter_Screens.cs'
+'Assets/newScreenCaptureShare.cs'
+'Assets/rotateCamera.cs'
+'Assets/socialURL.cs'
+'Assets/updatePreviewBuddy.cs'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'

@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="BT.AFRO" xml:space="preserve">
+		<value>من أصل أفريقي</value>
+	</data>
+	<data name="BT.BADGER" xml:space="preserve">
+		<value>غرير</value>
+	</data>
+	<data name="BT.BASEBALLBAT" xml:space="preserve">
+		<value>مضرب بيسبول</value>
+	</data>
+	<data name="BT.BASKETBALL" xml:space="preserve">
+		<value>كرة السلة</value>
+	</data>
+	<data name="BT.BEACHBABE" xml:space="preserve">
+		<value>فاتنة الشاطئ</value>
+	</data>
+	<data name="BT.bestscoretnt" xml:space="preserve">
+		<value>بي أفضل درجة في مستوى مادة تي أن تي</value>
+	</data>
+	<data name="BT.bestscorewind" xml:space="preserve">
+		<value>نقاط بلدي أفضل</value>
+	</data>
+	<data name="BT.besttimepong" xml:space="preserve">
+		<value>وقتي أفضل في "كرة الطاولة الصديق"</value>
+	</data>
+	<data name="BT.BIGGREENBUDDY" xml:space="preserve">
+		<value>الصديق الأخضر الكبير</value>
+	</data>
+	<data name="BT.BMXBILLY" xml:space="preserve">
+		<value>بيلي بي أم إكس</value>
+	</data>
+	<data name="BT.BOUNTYHUNTER" xml:space="preserve">
+		<value>صياد</value>
+	</data>
+	<data name="BT.BOUNTYHUNTERHELMET" xml:space="preserve">
+		<value>خوذة صياد</value>
+	</data>
+	<data name="BT.BOXERBUDDY" xml:space="preserve">
+		<value>الصديق الملاكم</value>
+	</data>
+	<data name="BT.BOXINGGLOVES" xml:space="preserve">
+		<value>قفازات الملاكمة</value>
+	</data>
+	<data name="BT.BOZOBUDDY" xml:space="preserve">
+		<value>الصديق بوزو</value>
+	</data>
+	<data name="BT.BPcreditask" xml:space="preserve">
+		<value>هل أنت متأكد من أنك تريد استخدام ائتمانات 1000 لإطلاق العنان "كرة الطاولة الصديق"؟</value>
+	</data>
+	<data name="BT.buddy" xml:space="preserve">
+		<value>الصديق</value>
+	</data>
+	<data name="BT.BUDDYJEFFERSON" xml:space="preserve">
+		<value>جيفرسون الصديق</value>
+	</data>
+	<data name="BT.buddypong" xml:space="preserve">
+		<value>الصديق كرة الطاولة</value>
+	</data>
+	<data name="BT.buddytoss" xml:space="preserve">
+		<value>إرم الصديق</value>
+	</data>
+	<data name="BT.bullseye" xml:space="preserve">
+		<value>بولس</value>
+	</data>
+	<data name="BT.BUSINESSBUDDY" xml:space="preserve">
+		<value>زميل العمل</value>
+	</data>
+	<data name="BT.claimgift" xml:space="preserve">
+		<value>المطالبة الخاص بك هدية مجانية!</value>
+	</data>
+	<data name="BT.CLASSYSHOES" xml:space="preserve">
+		<value>أحذية أنيقة</value>
+	</data>
+	<data name="BT.CLAWS" xml:space="preserve">
+		<value>مخالب</value>
+	</data>
+	<data name="BT.CLOWNSHOES" xml:space="preserve">
+		<value>أحذية مهرج</value>
+	</data>
+	<data name="BT.congratulations" xml:space="preserve">
+		<value>تهاني</value>
+	</data>
+	<data name="BT.COWBOYHAT" xml:space="preserve">
+		<value>قبعة رعاة البقر</value>
+	</data>
+	<data name="BT.credits" xml:space="preserve">
+		<value>الاعتمادات</value>
+	</data>
+	<data name="BT.creditswon" xml:space="preserve">
+		<value>فاز الاعتمادات!</value>
+	</data>
+	<data name="BT.CROC" xml:space="preserve">
+		<value>تمساح</value>
+	</data>
+	<data name="BT.CROWN" xml:space="preserve">
+		<value>تاج</value>
+	</data>
+	<data name="BT.cupsleft" xml:space="preserve">
+		<value>كوب يسار</value>
+	</data>
+	<data name="BT.CUSTOMBUDDY" xml:space="preserve">
+		<value>الصديق مخصصة</value>
+	</data>
+	<data name="BT.DEMONPOOL" xml:space="preserve">
+		<value>ديمونبول</value>
+	</data>
+	<data name="BT.DOCTORBUDDY" xml:space="preserve">
+		<value>رفيق الطبيب</value>
+	</data>
+	<data name="BT.DOUBLESECRETAGENT" xml:space="preserve">
+		<value>عميل سري مزدوجة</value>
+	</data>
+	<data name="BT.DRIFTER" xml:space="preserve">
+		<value>التائه</value>
+	</data>
+	<data name="BT.DUNCEHAT" xml:space="preserve">
+		<value>قبعة غبي لالنبيل</value>
+	</data>
+	<data name="BT.earn" xml:space="preserve">
+		<value>كسب</value>
+	</data>
+	<data name="BT.edit" xml:space="preserve">
+		<value>تحرير</value>
+	</data>
+	<data name="BT.ELF" xml:space="preserve">
+		<value>قزم</value>
+	</data>
+	<data name="BT.ELFHAT" xml:space="preserve">
+		<value>قبعة العفريت</value>
+	</data>
+	<data name="BT.ELFSHOES" xml:space="preserve">
+		<value>أحذية قزم</value>
+	</data>
+	<data name="BT.error" xml:space="preserve">
+		<value>خطأ</value>
+	</data>
+	<data name="BT.EVILEMPEROR" xml:space="preserve">
+		<value>إمبراطور الشر</value>
+	</data>
+	<data name="BT.EVILVILLAINMASK" xml:space="preserve">
+		<value>قناع الشرير</value>
+	</data>
+	<data name="BT.facecamera" xml:space="preserve">
+		<value>كاميرا الوجه</value>
+	</data>
+	<data name="BT.FANFINGER" xml:space="preserve">
+		<value>إصبع مروحة</value>
+	</data>
+	<data name="BT.fieldgoal" xml:space="preserve">
+		<value>الحقل الهدف</value>
+	</data>
+	<data name="BT.FIREMANBUDDY" xml:space="preserve">
+		<value>الصديق رجل الإطفاء</value>
+	</data>
+	<data name="BT.FOOTBALL" xml:space="preserve">
+		<value>لكرة القدم</value>
+	</data>
+	<data name="BT.FOOTBALLBUDDY" xml:space="preserve">
+		<value>الصديق لكرة القدم</value>
+	</data>
+	<data name="BT.FOOTBALLHELMET" xml:space="preserve">
+		<value>خوذة لكرة القدم</value>
+	</data>
+	<data name="BT.freegift" xml:space="preserve">
+		<value>هدية مجانية</value>
+	</data>
+	<data name="BT.FUTUREBOARD" xml:space="preserve">
+		<value>المجلس المقبلة</value>
+	</data>
+	<data name="BT.FUTUREBUDDY" xml:space="preserve">
+		<value>رفيق المستقبل</value>
+	</data>
+	<data name="BT.FUTURESHOES" xml:space="preserve">
+		<value>أحذية المستقبل</value>
+	</data>
+	<data name="BT.gameover" xml:space="preserve">
+		<value>انتهت اللعبة</value>
+	</data>
+	<data name="BT.GASMASK" xml:space="preserve">
+		<value>قناع الغاز</value>
+	</data>
+	<data name="BT.giftin" xml:space="preserve">
+		<value>هدية في</value>
+	</data>
+	<data name="BT.GOLFCLUB" xml:space="preserve">
+		<value>نادي الغولف</value>
+	</data>
+	<data name="BT.GRANDMASTERMASK" xml:space="preserve">
+		<value>قناع غراند ماستر</value>
+	</data>
+	<data name="BT.HAMMER" xml:space="preserve">
+		<value>المطرقة</value>
+	</data>
+	<data name="BT.HAWKSMASK" xml:space="preserve">
+		<value>قناع هوك</value>
+	</data>
+	<data name="BT.HIPSTERS" xml:space="preserve">
+		<value>محبو موسيقى الجاز</value>
+	</data>
+	<data name="BT.HORSEFACE" xml:space="preserve">
+		<value>وجه الحصان</value>
+	</data>
+	<data name="BT.ICESKATES" xml:space="preserve">
+		<value>التزلج على الجليد الثلج</value>
+	</data>
+	<data name="BT.JACKROGER" xml:space="preserve">
+		<value>جاك روجيه</value>
+	</data>
+	<data name="BT.JANE" xml:space="preserve">
+		<value>جين</value>
+	</data>
+	<data name="BT.JOHN" xml:space="preserve">
+		<value>جون</value>
+	</data>
+	<data name="BT.JOHNNYBASEBALL" xml:space="preserve">
+		<value>البيسبول جوني</value>
+	</data>
+	<data name="BT.justunlocked" xml:space="preserve">
+		<value>فقط مقفلة</value>
+	</data>
+	<data name="BT.KIDMAGIC" xml:space="preserve">
+		<value>كيد السحر</value>
+	</data>
+	<data name="BT.KNIGHT" xml:space="preserve">
+		<value>فارس</value>
+	</data>
+	<data name="BT.KNIGHTSHELMET" xml:space="preserve">
+		<value>خوذة الفارس</value>
+	</data>
+	<data name="BT.LANCE" xml:space="preserve">
+		<value>أنس</value>
+	</data>
+	<data name="BT.LANCEMOONWALKER" xml:space="preserve">
+		<value>أنس MOONWALKER</value>
+	</data>
+	<data name="BT.language" xml:space="preserve">
+		<value>اللغة</value>
+	</data>
+	<data name="BT.level" xml:space="preserve">
+		<value>مستوى</value>
+	</data>
+	<data name="BT.LUCHADOR" xml:space="preserve">
+		<value>LUCHADOR</value>
+	</data>
+	<data name="BT.LUITHECARPENTER" xml:space="preserve">
+		<value>ليني نجار</value>
+	</data>
+	<data name="BT.MACHETE" xml:space="preserve">
+		<value>ساطور</value>
+	</data>
+	<data name="BT.MADCHEMIST" xml:space="preserve">
+		<value>جنون في الكيمياء</value>
+	</data>
+	<data name="BT.MAGICWAND" xml:space="preserve">
+		<value>عصا سحرية</value>
+	</data>
+	<data name="BT.MANNYTHEPLUMBER" xml:space="preserve">
+		<value>ماني السباك</value>
+	</data>
+	<data name="BT.MARLEY" xml:space="preserve">
+		<value>مارلي فلين</value>
+	</data>
+	<data name="BT.MASKMAN" xml:space="preserve">
+		<value>رجل القناع</value>
+	</data>
+	<data name="BT.MEANONE" xml:space="preserve">
+		<value>يعني واحد</value>
+	</data>
+	<data name="BT.MISTERFLICK" xml:space="preserve">
+		<value>مستر فليك</value>
+	</data>
+	<data name="BT.MONSTERHANDS" xml:space="preserve">
+		<value>أيدي الوحش</value>
+	</data>
+	<data name="BT.MOVIESTAR" xml:space="preserve">
+		<value>نجمة سينمائية</value>
+	</data>
+	<data name="BT.mute" xml:space="preserve">
+		<value>كتم الصوت</value>
+	</data>
+	<data name="BT.nicetoss" xml:space="preserve">
+		<value>كنت فقط حصلت على تحطيم.. إرم لطيف!</value>
+	</data>
+	<data name="BT.NIGHTMAREBUDDY" xml:space="preserve">
+		<value>الصديق كابوس</value>
+	</data>
+	<data name="BT.NO" xml:space="preserve">
+		<value>لا</value>
+	</data>
+	<data name="BT.NOSHADOWS" xml:space="preserve">
+		<value>الظلال قبالة</value>
+	</data>
+	<data name="BT.notenoughcredits" xml:space="preserve">
+		<value>الاعتمادات غير كافية</value>
+	</data>
+	<data name="BT.OFFICERJOE" xml:space="preserve">
+		<value>موظف جو</value>
+	</data>
+	<data name="BT.ONEEYE" xml:space="preserve">
+		<value>عين واحدة</value>
+	</data>
+	<data name="BT.pausemenu" xml:space="preserve">
+		<value>القائمة وقفه</value>
+	</data>
+	<data name="BT.PHASERGUN" xml:space="preserve">
+		<value>فيزر بندقية</value>
+	</data>
+	<data name="BT.PRANKSTERBUDDY" xml:space="preserve">
+		<value>الصديق المخادع</value>
+	</data>
+	<data name="BT.PREPPYBUDDY" xml:space="preserve">
+		<value>رفيق PREPPY</value>
+	</data>
+	<data name="BT.PRESIDENTBUDDY" xml:space="preserve">
+		<value>الرئيس رفيق</value>
+	</data>
+	<data name="BT.PRINCESS" xml:space="preserve">
+		<value>الأميرة</value>
+	</data>
+	<data name="BT.PSYCHOMAN" xml:space="preserve">
+		<value>الرجل النفسية</value>
+	</data>
+	<data name="BT.RAPPERBUDDY" xml:space="preserve">
+		<value>رفيق مغني الراب</value>
+	</data>
+	<data name="BT.ratelater" xml:space="preserve">
+		<value>قي وقت لاحق</value>
+	</data>
+	<data name="BT.ratenever" xml:space="preserve">
+		<value>لم يذكر لي</value>
+	</data>
+	<data name="BT.ratenow" xml:space="preserve">
+		<value>معدل الآن</value>
+	</data>
+	<data name="BT.ratingbody" xml:space="preserve">
+		<value>مثل لعبة لدينا؟ </value>
+	</data>
+	<data name="BT.REBELBRO" xml:space="preserve">
+		<value>المتمردين وإخوانه</value>
+	</data>
+	<data name="BT.record" xml:space="preserve">
+		<value>سجل</value>
+	</data>
+	<data name="BT.removeads" xml:space="preserve">
+		<value>إزالة الإعلانات</value>
+	</data>
+	<data name="BT.restorecomplete" xml:space="preserve">
+		<value>استعادة كاملة</value>
+	</data>
+	<data name="BT.restorepurchases" xml:space="preserve">
+		<value>استعادة عمليات الشراء</value>
+	</data>
+	<data name="BT.RIOTCOP" xml:space="preserve">
+		<value>مؤتمر مكافحة الشغب</value>
+	</data>
+	<data name="BT.ROADWORKER" xml:space="preserve">
+		<value>عامل الطريق</value>
+	</data>
+	<data name="BT.ROBBERBUDDY" xml:space="preserve">
+		<value>الصديق السارق</value>
+	</data>
+	<data name="BT.ROBOT" xml:space="preserve">
+		<value>الروبوت</value>
+	</data>
+	<data name="BT.ROLLERBLADES" xml:space="preserve">
+		<value>روليربلاديس</value>
+	</data>
+	<data name="BT.RUSTY" xml:space="preserve">
+		<value>صدئ</value>
+	</data>
+	<data name="BT.SAIS" xml:space="preserve">
+		<value>كلية الدراسات الدولية المتقدمة</value>
+	</data>
+	<data name="BT.SANTA" xml:space="preserve">
+		<value>سانتا</value>
+	</data>
+	<data name="BT.SANTAHAT" xml:space="preserve">
+		<value>قبعة سانتا</value>
+	</data>
+	<data name="BT.score" xml:space="preserve">
+		<value>نقاط</value>
+	</data>
+	<data name="BT.select" xml:space="preserve">
+		<value>حدد</value>
+	</data>
+	<data name="BT.SHADOWS" xml:space="preserve">
+		<value>الظلال على</value>
+	</data>
+	<data name="BT.share" xml:space="preserve">
+		<value>حصة</value>
+	</data>
+	<data name="BT.SHERIFFBUDDY" xml:space="preserve">
+		<value>رفيق شريف</value>
+	</data>
+	<data name="BT.SHORTHAT" xml:space="preserve">
+		<value>هات قصيرة</value>
+	</data>
+	<data name="BT.SKATEBOARD" xml:space="preserve">
+		<value>لوح التزلج</value>
+	</data>
+	<data name="BT.SKIPOLES" xml:space="preserve">
+		<value>أقطاب التزلج</value>
+	</data>
+	<data name="BT.SKIS" xml:space="preserve">
+		<value>الزحافات</value>
+	</data>
+	<data name="BT.SNOWBOARD" xml:space="preserve">
+		<value>على الجليد</value>
+	</data>
+	<data name="BT.sorrynotenough" xml:space="preserve">
+		<value>عذراً لم يكن لديك ما يكفي من الاعتمادات.</value>
+	</data>
+	<data name="BT.SOULMAN" xml:space="preserve">
+		<value>رجل الروح</value>
+	</data>
+	<data name="BT.SPACEDOGMASK" xml:space="preserve">
+		<value>قناع الكلب الفضاء</value>
+	</data>
+	<data name="BT.SPACEGUARDIAN" xml:space="preserve">
+		<value>حارس الفضاء</value>
+	</data>
+	<data name="BT.SPACEGUARDIANHELMET" xml:space="preserve">
+		<value>خوذة الولي الفضاء</value>
+	</data>
+	<data name="BT.SPACEVILLAINHELMET" xml:space="preserve">
+		<value>مساحة الشرير خوذة</value>
+	</data>
+	<data name="BT.stoprecordingvideo" xml:space="preserve">
+		<value>إيقاف تسجيل الفيديو</value>
+	</data>
+	<data name="BT.success" xml:space="preserve">
+		<value>نجاح</value>
+	</data>
+	<data name="BT.SUPERBUGMAN" xml:space="preserve">
+		<value>علة سوبر مان</value>
+	</data>
+	<data name="BT.SUPERGALACTIC" xml:space="preserve">
+		<value>سوبر المجرة الصديق 2 × قروض وائتمانات 1000 مجاناً مع شراء</value>
+	</data>
+	<data name="BT.SUPERGLOWSTICK" xml:space="preserve">
+		<value>توهج السوبر عصا</value>
+	</data>
+	<data name="BT.SUPERGLOWSTICKH" xml:space="preserve">
+		<value>توهج سوبر العصا البطل</value>
+	</data>
+	<data name="BT.SUPERGUY" xml:space="preserve">
+		<value>الرجل السوبر</value>
+	</data>
+	<data name="BT.SUPERHAWKMAN" xml:space="preserve">
+		<value>هوك سوبر مان</value>
+	</data>
+	<data name="BT.SUPERMAGNETMAN" xml:space="preserve">
+		<value>الرجل المغناطيس سوبر</value>
+	</data>
+	<data name="BT.SUPERMAGNETMANHELMET" xml:space="preserve">
+		<value>خوذة رجل سوبر ماجينت</value>
+	</data>
+	<data name="BT.SUPERMETALMAN" xml:space="preserve">
+		<value>رجل سوبر معدنية</value>
+	</data>
+	<data name="BT.SUPERPATRIOTBUDDY" xml:space="preserve">
+		<value>الصديق باتريوت سوبر</value>
+	</data>
+	<data name="BT.SUPERPATRIOTSHIELD" xml:space="preserve">
+		<value>درع باتريوت سوبر</value>
+	</data>
+	<data name="BT.SUPERSIDEKICKBUDDY" xml:space="preserve">
+		<value>الصديق الصاحب سوبر</value>
+	</data>
+	<data name="BT.SUPERSPEEDYBUDDY" xml:space="preserve">
+		<value>سرعة فائقة الصديق</value>
+	</data>
+	<data name="BT.SUPERSWORD" xml:space="preserve">
+		<value>سوبر السيف</value>
+	</data>
+	<data name="BT.SUPERVILLAINBUDDY" xml:space="preserve">
+		<value>الصديق الشرير سوبر</value>
+	</data>
+	<data name="BT.THUNDERBUDDY" xml:space="preserve">
+		<value>رعد الصديق</value>
+	</data>
+	<data name="BT.TIEDYEHAT" xml:space="preserve">
+		<value>التعادل صبغ القبعة</value>
+	</data>
+	<data name="BT.TIGERSLIPPERS" xml:space="preserve">
+		<value>نعال النمر</value>
+	</data>
+	<data name="BT.TINYRED" xml:space="preserve">
+		<value>الأحمر الصغير</value>
+	</data>
+	<data name="BT.TNTcreditsask" xml:space="preserve">
+		<value>هل أنت متأكد من أنك تريد استخدام ائتمانات 1000 لإلغاء تأمين مستوى مادة تي أن تي؟</value>
+	</data>
+	<data name="BT.tntlevel" xml:space="preserve">
+		<value>مستوى مادة تي أن تي</value>
+	</data>
+	<data name="BT.TOPHAT" xml:space="preserve">
+		<value>قبعة</value>
+	</data>
+	<data name="BT.toss" xml:space="preserve">
+		<value>إرم</value>
+	</data>
+	<data name="BT.total" xml:space="preserve">
+		<value>المجموع</value>
+	</data>
+	<data name="BT.transactionfailed" xml:space="preserve">
+		<value>الحركة فشلت</value>
+	</data>
+	<data name="BT.TRENDYBOOTS" xml:space="preserve">
+		<value>الأحذية العصرية</value>
+	</data>
+	<data name="BT.unlockbuddypong" xml:space="preserve">
+		<value>إطلاق العنان لكرة الطاولة الصديق</value>
+	</data>
+	<data name="BT.unlocktntlevel" xml:space="preserve">
+		<value>إلغاء تأمين مستوى مادة تي أن تي</value>
+	</data>
+	<data name="BT.unmute" xml:space="preserve">
+		<value>إلغاء كتمه</value>
+	</data>
+	<data name="BT.videos" xml:space="preserve">
+		<value>أشرطة الفيديو</value>
+	</data>
+	<data name="BT.WAITRESS" xml:space="preserve">
+		<value>نادلة</value>
+	</data>
+	<data name="BT.winaprize" xml:space="preserve">
+		<value>الفوز بجائزة</value>
+	</data>
+	<data name="BT.windlevel" xml:space="preserve">
+		<value>مستوى الرياح</value>
+	</data>
+	<data name="BT.WOODSWORD" xml:space="preserve">
+		<value>سيف الخشب</value>
+	</data>
+	<data name="BT.WORKBOOTS" xml:space="preserve">
+		<value>أحذية العمل</value>
+	</data>
+	<data name="BT.WRESTLERBUDDY" xml:space="preserve">
+		<value>الصديق مصارع</value>
+	</data>
+	<data name="BT.YES" xml:space="preserve">
+		<value>نعم</value>
+	</data>
+	<data name="BT.YETI" xml:space="preserve">
+		<value>آليتي</value>
+	</data>
+	<data name="BT.YETIFEET" xml:space="preserve">
+		<value>قدم آليتي</value>
+	</data>
+	<data name="BT.YETIHANDS" xml:space="preserve">
+		<value>أيدي آليتي</value>
+	</data>
+</root>

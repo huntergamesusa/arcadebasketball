@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="BT.AFRO" xml:space="preserve">
+		<value>アフロ</value>
+	</data>
+	<data name="BT.BADGER" xml:space="preserve">
+		<value>アナグマ</value>
+	</data>
+	<data name="BT.BASEBALLBAT" xml:space="preserve">
+		<value>野球のバット</value>
+	</data>
+	<data name="BT.BASKETBALL" xml:space="preserve">
+		<value>バスケット ボール</value>
+	</data>
+	<data name="BT.BEACHBABE" xml:space="preserve">
+		<value>浜の可愛い人</value>
+	</data>
+	<data name="BT.bestscoretnt" xml:space="preserve">
+		<value>TNT のレベルで私の最高のスコアは、します。</value>
+	</data>
+	<data name="BT.bestscorewind" xml:space="preserve">
+		<value>私の最高スコアが</value>
+	</data>
+	<data name="BT.besttimepong" xml:space="preserve">
+		<value>卓球仲間で私の最高の時間です。</value>
+	</data>
+	<data name="BT.BIGGREENBUDDY" xml:space="preserve">
+		<value>緑の大きな相棒</value>
+	</data>
+	<data name="BT.BMXBILLY" xml:space="preserve">
+		<value>BMX ビリー</value>
+	</data>
+	<data name="BT.BOUNTYHUNTER" xml:space="preserve">
+		<value>バウンティ ハンター</value>
+	</data>
+	<data name="BT.BOUNTYHUNTERHELMET" xml:space="preserve">
+		<value>バウンティ ハンター ヘルメット</value>
+	</data>
+	<data name="BT.BOXERBUDDY" xml:space="preserve">
+		<value>ボクサー バディ</value>
+	</data>
+	<data name="BT.BOXINGGLOVES" xml:space="preserve">
+		<value>ボクシング グローブ</value>
+	</data>
+	<data name="BT.BOZOBUDDY" xml:space="preserve">
+		<value>あほの相棒</value>
+	</data>
+	<data name="BT.BPcreditask" xml:space="preserve">
+		<value>相棒ポンのロックを解除に 1000年クレジットを使用するよろしいですか。</value>
+	</data>
+	<data name="BT.buddy" xml:space="preserve">
+		<value>バディ</value>
+	</data>
+	<data name="BT.BUDDYJEFFERSON" xml:space="preserve">
+		<value>バディ ジェファーソン</value>
+	</data>
+	<data name="BT.buddypong" xml:space="preserve">
+		<value>バディ ピンポン</value>
+	</data>
+	<data name="BT.buddytoss" xml:space="preserve">
+		<value>バディ トス</value>
+	</data>
+	<data name="BT.bullseye" xml:space="preserve">
+		<value>ブルズアイ</value>
+	</data>
+	<data name="BT.BUSINESSBUDDY" xml:space="preserve">
+		<value>ビジネス仲間</value>
+	</data>
+	<data name="BT.claimgift" xml:space="preserve">
+		<value>あなたの無料ギフトを主張!</value>
+	</data>
+	<data name="BT.CLASSYSHOES" xml:space="preserve">
+		<value>上品な靴</value>
+	</data>
+	<data name="BT.CLAWS" xml:space="preserve">
+		<value>爪</value>
+	</data>
+	<data name="BT.CLOWNSHOES" xml:space="preserve">
+		<value>ピエロの靴</value>
+	</data>
+	<data name="BT.congratulations" xml:space="preserve">
+		<value>お祝いの言葉</value>
+	</data>
+	<data name="BT.COWBOYHAT" xml:space="preserve">
+		<value>カウボーイ ハット</value>
+	</data>
+	<data name="BT.credits" xml:space="preserve">
+		<value>クレジット</value>
+	</data>
+	<data name="BT.creditswon" xml:space="preserve">
+		<value>クレジットを獲得!</value>
+	</data>
+	<data name="BT.CROC" xml:space="preserve">
+		<value>ワニ</value>
+	</data>
+	<data name="BT.CROWN" xml:space="preserve">
+		<value>クラウン</value>
+	</data>
+	<data name="BT.cupsleft" xml:space="preserve">
+		<value>左のカップ</value>
+	</data>
+	<data name="BT.CUSTOMBUDDY" xml:space="preserve">
+		<value>カスタムの相棒</value>
+	</data>
+	<data name="BT.DEMONPOOL" xml:space="preserve">
+		<value>DEMONPOOL</value>
+	</data>
+	<data name="BT.DOCTORBUDDY" xml:space="preserve">
+		<value>医者の相棒</value>
+	</data>
+	<data name="BT.DOUBLESECRETAGENT" xml:space="preserve">
+		<value>二重スパイ</value>
+	</data>
+	<data name="BT.DRIFTER" xml:space="preserve">
+		<value>ドリフター</value>
+	</data>
+	<data name="BT.DUNCEHAT" xml:space="preserve">
+		<value>劣等生帽子</value>
+	</data>
+	<data name="BT.earn" xml:space="preserve">
+		<value>獲得</value>
+	</data>
+	<data name="BT.edit" xml:space="preserve">
+		<value>編集</value>
+	</data>
+	<data name="BT.ELF" xml:space="preserve">
+		<value>エルフ</value>
+	</data>
+	<data name="BT.ELFHAT" xml:space="preserve">
+		<value>エルフ帽子</value>
+	</data>
+	<data name="BT.ELFSHOES" xml:space="preserve">
+		<value>エルフの靴</value>
+	</data>
+	<data name="BT.error" xml:space="preserve">
+		<value>エラー</value>
+	</data>
+	<data name="BT.EVILEMPEROR" xml:space="preserve">
+		<value>天皇は悪</value>
+	</data>
+	<data name="BT.EVILVILLAINMASK" xml:space="preserve">
+		<value>邪悪な悪役マスク</value>
+	</data>
+	<data name="BT.facecamera" xml:space="preserve">
+		<value>顔カメラ</value>
+	</data>
+	<data name="BT.FANFINGER" xml:space="preserve">
+		<value>ファンの指</value>
+	</data>
+	<data name="BT.fieldgoal" xml:space="preserve">
+		<value>フィールド ゴール</value>
+	</data>
+	<data name="BT.FIREMANBUDDY" xml:space="preserve">
+		<value>消防士の相棒</value>
+	</data>
+	<data name="BT.FOOTBALL" xml:space="preserve">
+		<value>サッカー</value>
+	</data>
+	<data name="BT.FOOTBALLBUDDY" xml:space="preserve">
+		<value>サッカーの仲間</value>
+	</data>
+	<data name="BT.FOOTBALLHELMET" xml:space="preserve">
+		<value>フットボール用ヘルメット</value>
+	</data>
+	<data name="BT.freegift" xml:space="preserve">
+		<value>無料ギフト</value>
+	</data>
+	<data name="BT.FUTUREBOARD" xml:space="preserve">
+		<value>今後の理事会</value>
+	</data>
+	<data name="BT.FUTUREBUDDY" xml:space="preserve">
+		<value>今後の相棒</value>
+	</data>
+	<data name="BT.FUTURESHOES" xml:space="preserve">
+		<value>将来の靴</value>
+	</data>
+	<data name="BT.gameover" xml:space="preserve">
+		<value>ゲームは終わりました</value>
+	</data>
+	<data name="BT.GASMASK" xml:space="preserve">
+		<value>防毒マスク</value>
+	</data>
+	<data name="BT.giftin" xml:space="preserve">
+		<value>贈り物</value>
+	</data>
+	<data name="BT.GOLFCLUB" xml:space="preserve">
+		<value>ゴルフ クラブ</value>
+	</data>
+	<data name="BT.GRANDMASTERMASK" xml:space="preserve">
+		<value>グランド マスター マスク</value>
+	</data>
+	<data name="BT.HAMMER" xml:space="preserve">
+		<value>ハンマー</value>
+	</data>
+	<data name="BT.HAWKSMASK" xml:space="preserve">
+		<value>タカのマスク</value>
+	</data>
+	<data name="BT.HIPSTERS" xml:space="preserve">
+		<value>流行に敏感な</value>
+	</data>
+	<data name="BT.HORSEFACE" xml:space="preserve">
+		<value>馬の顔</value>
+	</data>
+	<data name="BT.ICESKATES" xml:space="preserve">
+		<value>アイス スケート</value>
+	</data>
+	<data name="BT.JACKROGER" xml:space="preserve">
+		<value>ロジャーをジャック</value>
+	</data>
+	<data name="BT.JANE" xml:space="preserve">
+		<value>ジェーン</value>
+	</data>
+	<data name="BT.JOHN" xml:space="preserve">
+		<value>ジョン</value>
+	</data>
+	<data name="BT.JOHNNYBASEBALL" xml:space="preserve">
+		<value>ジョニー野球</value>
+	</data>
+	<data name="BT.justunlocked" xml:space="preserve">
+		<value>ただのロックを解除</value>
+	</data>
+	<data name="BT.KIDMAGIC" xml:space="preserve">
+		<value>子供マジック</value>
+	</data>
+	<data name="BT.KNIGHT" xml:space="preserve">
+		<value>騎士</value>
+	</data>
+	<data name="BT.KNIGHTSHELMET" xml:space="preserve">
+		<value>騎士の兜</value>
+	</data>
+	<data name="BT.LANCE" xml:space="preserve">
+		<value>ランス</value>
+	</data>
+	<data name="BT.LANCEMOONWALKER" xml:space="preserve">
+		<value>ランス ムーンウォーカー</value>
+	</data>
+	<data name="BT.language" xml:space="preserve">
+		<value>言語</value>
+	</data>
+	<data name="BT.level" xml:space="preserve">
+		<value>レベル</value>
+	</data>
+	<data name="BT.LUCHADOR" xml:space="preserve">
+		<value>未分類</value>
+	</data>
+	<data name="BT.LUITHECARPENTER" xml:space="preserve">
+		<value>レニー大工</value>
+	</data>
+	<data name="BT.MACHETE" xml:space="preserve">
+		<value>マチェーテ</value>
+	</data>
+	<data name="BT.MADCHEMIST" xml:space="preserve">
+		<value>狂牛病の化学者</value>
+	</data>
+	<data name="BT.MAGICWAND" xml:space="preserve">
+		<value>魔法の杖</value>
+	</data>
+	<data name="BT.MANNYTHEPLUMBER" xml:space="preserve">
+		<value>マニー配管工</value>
+	</data>
+	<data name="BT.MARLEY" xml:space="preserve">
+		<value>マーリー フリン</value>
+	</data>
+	<data name="BT.MASKMAN" xml:space="preserve">
+		<value>マスクの男</value>
+	</data>
+	<data name="BT.MEANONE" xml:space="preserve">
+		<value>1 つを意味します。</value>
+	</data>
+	<data name="BT.MISTERFLICK" xml:space="preserve">
+		<value>ミスター フリック</value>
+	</data>
+	<data name="BT.MONSTERHANDS" xml:space="preserve">
+		<value>怪物の手</value>
+	</data>
+	<data name="BT.MOVIESTAR" xml:space="preserve">
+		<value>映画スター</value>
+	</data>
+	<data name="BT.mute" xml:space="preserve">
+		<value>ミュート</value>
+	</data>
+	<data name="BT.nicetoss" xml:space="preserve">
+		<value>ちょうど... 難破を得たいいトス!</value>
+	</data>
+	<data name="BT.NIGHTMAREBUDDY" xml:space="preserve">
+		<value>悪夢のようなバディ</value>
+	</data>
+	<data name="BT.NO" xml:space="preserve">
+		<value>違います</value>
+	</data>
+	<data name="BT.NOSHADOWS" xml:space="preserve">
+		<value>オフの影</value>
+	</data>
+	<data name="BT.notenoughcredits" xml:space="preserve">
+		<value>十分なクレジット</value>
+	</data>
+	<data name="BT.OFFICERJOE" xml:space="preserve">
+		<value>官ジョー</value>
+	</data>
+	<data name="BT.ONEEYE" xml:space="preserve">
+		<value>1 つ目</value>
+	</data>
+	<data name="BT.pausemenu" xml:space="preserve">
+		<value>ポーズ メニュー</value>
+	</data>
+	<data name="BT.PHASERGUN" xml:space="preserve">
+		<value>フェイザー銃</value>
+	</data>
+	<data name="BT.PRANKSTERBUDDY" xml:space="preserve">
+		<value>いたずらの相棒</value>
+	</data>
+	<data name="BT.PREPPYBUDDY" xml:space="preserve">
+		<value>良家のお坊ちゃんの相棒</value>
+	</data>
+	<data name="BT.PRESIDENTBUDDY" xml:space="preserve">
+		<value>社長の相棒</value>
+	</data>
+	<data name="BT.PRINCESS" xml:space="preserve">
+		<value>プリンセス</value>
+	</data>
+	<data name="BT.PSYCHOMAN" xml:space="preserve">
+		<value>サイコ男</value>
+	</data>
+	<data name="BT.RAPPERBUDDY" xml:space="preserve">
+		<value>ラッパーの相棒</value>
+	</data>
+	<data name="BT.ratelater" xml:space="preserve">
+		<value>後評価します。</value>
+	</data>
+	<data name="BT.ratenever" xml:space="preserve">
+		<value>決して私に思い出させる</value>
+	</data>
+	<data name="BT.ratenow" xml:space="preserve">
+		<value>今レートします。</value>
+	</data>
+	<data name="BT.ratingbody" xml:space="preserve">
+		<value>私たちのゲームのような?</value>
+	</data>
+	<data name="BT.REBELBRO" xml:space="preserve">
+		<value>反乱軍の仲間</value>
+	</data>
+	<data name="BT.record" xml:space="preserve">
+		<value>レコード</value>
+	</data>
+	<data name="BT.removeads" xml:space="preserve">
+		<value>広告を削除します。</value>
+	</data>
+	<data name="BT.restorecomplete" xml:space="preserve">
+		<value>復元完了</value>
+	</data>
+	<data name="BT.restorepurchases" xml:space="preserve">
+		<value>購入を復元します。</value>
+	</data>
+	<data name="BT.RIOTCOP" xml:space="preserve">
+		<value>暴動警官</value>
+	</data>
+	<data name="BT.ROADWORKER" xml:space="preserve">
+		<value>道路の労働者</value>
+	</data>
+	<data name="BT.ROBBERBUDDY" xml:space="preserve">
+		<value>強盗の相棒</value>
+	</data>
+	<data name="BT.ROBOT" xml:space="preserve">
+		<value>ロボット</value>
+	</data>
+	<data name="BT.ROLLERBLADES" xml:space="preserve">
+		<value>ローラーブレード</value>
+	</data>
+	<data name="BT.RUSTY" xml:space="preserve">
+		<value>さびた</value>
+	</data>
+	<data name="BT.SAIS" xml:space="preserve">
+		<value>サイス</value>
+	</data>
+	<data name="BT.SANTA" xml:space="preserve">
+		<value>サンタ</value>
+	</data>
+	<data name="BT.SANTAHAT" xml:space="preserve">
+		<value>サンタの帽子</value>
+	</data>
+	<data name="BT.score" xml:space="preserve">
+		<value>スコア</value>
+	</data>
+	<data name="BT.select" xml:space="preserve">
+		<value>選択します。</value>
+	</data>
+	<data name="BT.SHADOWS" xml:space="preserve">
+		<value>影</value>
+	</data>
+	<data name="BT.share" xml:space="preserve">
+		<value>共有</value>
+	</data>
+	<data name="BT.SHERIFFBUDDY" xml:space="preserve">
+		<value>保安官のバディ</value>
+	</data>
+	<data name="BT.SHORTHAT" xml:space="preserve">
+		<value>短い帽子</value>
+	</data>
+	<data name="BT.SKATEBOARD" xml:space="preserve">
+		<value>スケート ボード</value>
+	</data>
+	<data name="BT.SKIPOLES" xml:space="preserve">
+		<value>スキー ストック</value>
+	</data>
+	<data name="BT.SKIS" xml:space="preserve">
+		<value>スキー</value>
+	</data>
+	<data name="BT.SNOWBOARD" xml:space="preserve">
+		<value>スノーボード</value>
+	</data>
+	<data name="BT.sorrynotenough" xml:space="preserve">
+		<value>申し訳ありませんが十分なクレジットを持っていません。</value>
+	</data>
+	<data name="BT.SOULMAN" xml:space="preserve">
+		<value>魂の男</value>
+	</data>
+	<data name="BT.SPACEDOGMASK" xml:space="preserve">
+		<value>宇宙犬マスク</value>
+	</data>
+	<data name="BT.SPACEGUARDIAN" xml:space="preserve">
+		<value>宇宙の守護者</value>
+	</data>
+	<data name="BT.SPACEGUARDIANHELMET" xml:space="preserve">
+		<value>スペース ・ ガーディアン ヘルメット</value>
+	</data>
+	<data name="BT.SPACEVILLAINHELMET" xml:space="preserve">
+		<value>スペース悪役・ ヘルメット</value>
+	</data>
+	<data name="BT.stoprecordingvideo" xml:space="preserve">
+		<value>ビデオの録画を停止します。</value>
+	</data>
+	<data name="BT.success" xml:space="preserve">
+		<value>成功</value>
+	</data>
+	<data name="BT.SUPERBUGMAN" xml:space="preserve">
+		<value>超合虫男</value>
+	</data>
+	<data name="BT.SUPERGALACTIC" xml:space="preserve">
+		<value>超銀河バディ 2 倍クレジットと 1000年無料のクレジットを購入すると</value>
+	</data>
+	<data name="BT.SUPERGLOWSTICK" xml:space="preserve">
+		<value>スーパー光杖</value>
+	</data>
+	<data name="BT.SUPERGLOWSTICKH" xml:space="preserve">
+		<value>スーパーの輝きスティック ヒーロー</value>
+	</data>
+	<data name="BT.SUPERGUY" xml:space="preserve">
+		<value>スーパーの男</value>
+	</data>
+	<data name="BT.SUPERHAWKMAN" xml:space="preserve">
+		<value>スーパー ホーク男</value>
+	</data>
+	<data name="BT.SUPERMAGNETMAN" xml:space="preserve">
+		<value>スーパー磁石の男</value>
+	</data>
+	<data name="BT.SUPERMAGNETMANHELMET" xml:space="preserve">
+		<value>スーパー MAGENT 男ヘルメット</value>
+	</data>
+	<data name="BT.SUPERMETALMAN" xml:space="preserve">
+		<value>超金属の男</value>
+	</data>
+	<data name="BT.SUPERPATRIOTBUDDY" xml:space="preserve">
+		<value>超愛国者の友人</value>
+	</data>
+	<data name="BT.SUPERPATRIOTSHIELD" xml:space="preserve">
+		<value>超愛国者シールド</value>
+	</data>
+	<data name="BT.SUPERSIDEKICKBUDDY" xml:space="preserve">
+		<value>スーパーの相棒の相棒</value>
+	</data>
+	<data name="BT.SUPERSPEEDYBUDDY" xml:space="preserve">
+		<value>超迅速なバディ</value>
+	</data>
+	<data name="BT.SUPERSWORD" xml:space="preserve">
+		<value>スーパー剣</value>
+	</data>
+	<data name="BT.SUPERVILLAINBUDDY" xml:space="preserve">
+		<value>スーパー悪役の相棒</value>
+	</data>
+	<data name="BT.THUNDERBUDDY" xml:space="preserve">
+		<value>雷の相棒</value>
+	</data>
+	<data name="BT.TIEDYEHAT" xml:space="preserve">
+		<value>ネクタイ染め帽子</value>
+	</data>
+	<data name="BT.TIGERSLIPPERS" xml:space="preserve">
+		<value>タイガー スリッパ</value>
+	</data>
+	<data name="BT.TINYRED" xml:space="preserve">
+		<value>小さな赤</value>
+	</data>
+	<data name="BT.TNTcreditsask" xml:space="preserve">
+		<value>TNT のレベルのロックを解除に 1000年クレジットを使用するよろしいですか。</value>
+	</data>
+	<data name="BT.tntlevel" xml:space="preserve">
+		<value>TNT レベル</value>
+	</data>
+	<data name="BT.TOPHAT" xml:space="preserve">
+		<value>シルクハット</value>
+	</data>
+	<data name="BT.toss" xml:space="preserve">
+		<value>トス</value>
+	</data>
+	<data name="BT.total" xml:space="preserve">
+		<value>合計</value>
+	</data>
+	<data name="BT.transactionfailed" xml:space="preserve">
+		<value>トランザクションが失敗しました</value>
+	</data>
+	<data name="BT.TRENDYBOOTS" xml:space="preserve">
+		<value>流行ブーツ</value>
+	</data>
+	<data name="BT.unlockbuddypong" xml:space="preserve">
+		<value>相棒ポンのロックを解除します。</value>
+	</data>
+	<data name="BT.unlocktntlevel" xml:space="preserve">
+		<value>TNT のレベルのロックを解除します。</value>
+	</data>
+	<data name="BT.unmute" xml:space="preserve">
+		<value>ミュート解除します。</value>
+	</data>
+	<data name="BT.videos" xml:space="preserve">
+		<value>動画</value>
+	</data>
+	<data name="BT.WAITRESS" xml:space="preserve">
+		<value>ウェイトレス</value>
+	</data>
+	<data name="BT.winaprize" xml:space="preserve">
+		<value>賞金を獲得します。</value>
+	</data>
+	<data name="BT.windlevel" xml:space="preserve">
+		<value>風レベル</value>
+	</data>
+	<data name="BT.WOODSWORD" xml:space="preserve">
+		<value>木の剣</value>
+	</data>
+	<data name="BT.WORKBOOTS" xml:space="preserve">
+		<value>作業ブーツ</value>
+	</data>
+	<data name="BT.WRESTLERBUDDY" xml:space="preserve">
+		<value>レスラー仲間</value>
+	</data>
+	<data name="BT.YES" xml:space="preserve">
+		<value>[はい]</value>
+	</data>
+	<data name="BT.YETI" xml:space="preserve">
+		<value>イエティ</value>
+	</data>
+	<data name="BT.YETIFEET" xml:space="preserve">
+		<value>イエティの足</value>
+	</data>
+	<data name="BT.YETIHANDS" xml:space="preserve">
+		<value>イエティの手</value>
+	</data>
+</root>

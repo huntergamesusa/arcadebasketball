@@ -1,0 +1,297 @@
+fileFormatVersion: 2
+guid: 26e4b11aa7d314058a48017b0afbc435
+timeCreated: 1439945843
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: languageSpriteSheet_0
+    21300002: languageSpriteSheet_1
+    21300004: languageSpriteSheet_2
+    21300006: languageSpriteSheet_3
+    21300008: languageSpriteSheet_4
+    21300010: languageSpriteSheet_5
+    21300012: languageSpriteSheet_6
+    21300014: languageSpriteSheet_7
+    21300016: languageSpriteSheet_8
+    21300018: languageSpriteSheet_9
+    21300020: languageSpriteSheet_10
+    21300022: languageSpriteSheet_11
+    21300024: languageSpriteSheet_12
+    21300026: languageSpriteSheet_13
+    21300028: languageSpriteSheet_14
+    21300030: languageSpriteSheet_15
+    21300032: languageSpriteSheet_16
+    21300034: languageSpriteSheet_17
+    21300036: languageSpriteSheet_18
+    21300038: languageSpriteSheet_19
+    21300040: languageSpriteSheet_20
+    21300042: languageSpriteSheet_21
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 5
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: languageSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1620
+        width: 315
+        height: 162
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1620
+        width: 315
+        height: 162
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1458
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1458
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1295
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1296
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1134
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 1134
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 972
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 972
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 810
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 810
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 648
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 486
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 315
+        height: 159
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 324
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 162
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: languageSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 315
+        height: 160
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
