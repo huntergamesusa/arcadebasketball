@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs">
+    <Files>
+      <File FileName="Assets/HeyPlayManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/basketballThrow_TouchY.js" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/UnityAds/Scripts/Advertisements/Misc/AsyncExec.cs" Line="34" Column="1" />
+      <File FileName="Assets/adcolony/PlayV4VCAdButtonNate.cs" Line="71" Column="36" />
+      <File FileName="Assets/Standard Assets/Editor/UnityAds/Scripts/UnityAdsPostprocessor.cs" Line="136" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

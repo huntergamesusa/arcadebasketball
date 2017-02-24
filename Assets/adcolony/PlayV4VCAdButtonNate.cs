@@ -62,7 +62,6 @@ public class PlayV4VCAdButtonNate : MonoBehaviour {
 		AdColony.OnV4VCResult = UpdateCurrencyText;
 
 		Vungle.init("com.HunterGames.BuddyToss", "980241548", "980241548" );
-
 	
 
 		//		Vungle.init ("","980241548","");
@@ -263,6 +262,8 @@ public class PlayV4VCAdButtonNate : MonoBehaviour {
 	/// </summary>
 	public  void PerformButtonPressLogic() {
 
+		ShowOptions options = new ShowOptions ();
+		options.resultCallback = HandleShowResult;
 
 		if (PlayerPrefs.GetString ("PrimaryAd") == "adcolony") {
 
@@ -293,8 +294,7 @@ public class PlayV4VCAdButtonNate : MonoBehaviour {
 				}
 				else{
 					if (Advertisement.IsReady()) {
-						ShowOptions options = new ShowOptions ();
-						options.resultCallback = AdCallbackhandler;
+
 
 						Advertisement.Show (null,options);
 						videoButton.enabled = false;
@@ -312,8 +312,6 @@ public class PlayV4VCAdButtonNate : MonoBehaviour {
 				Debug.Log("unity click: " + PlayerPrefs.GetString ("PrimaryAd"));
 
 				if (Advertisement.IsReady()) {
-					ShowOptions options = new ShowOptions ();
-					options.resultCallback = AdCallbackhandler;
 
 					Advertisement.Show (null,options);
 					videoButton.enabled = false;
@@ -346,7 +344,9 @@ public class PlayV4VCAdButtonNate : MonoBehaviour {
 		}
 	}
 
-	void AdCallbackhandler (ShowResult result)
+
+
+	private void HandleShowResult (ShowResult result)
 	{
 		switch(result)
 		{

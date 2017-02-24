@@ -1,4 +1,7 @@
-﻿Shader "Custom/Flag" {
+﻿// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+// Upgrade NOTE: replaced '_World2Object' with 'unity_WorldToObject'
+
+Shader "Custom/Flag" {
    Properties {
       _Color ("Front Material Diffuse Color", Color) = (1,1,1,1) 
       _SpecColor ("Front Material Specular Color", Color) = (1,1,1,1) 
@@ -44,8 +47,8 @@
          {
             vertexOutput output;
  
-            float4x4 modelMatrix = _Object2World;
-            float4x4 modelMatrixInverse = _World2Object; 
+            float4x4 modelMatrix = unity_ObjectToWorld;
+            float4x4 modelMatrixInverse = unity_WorldToObject; 
                // multiplication with unity_Scale.w is unnecessary 
                // because we normalize transformed vectors
  
@@ -142,8 +145,8 @@
          {
             vertexOutput output;
  
-            float4x4 modelMatrix = _Object2World;
-            float4x4 modelMatrixInverse = _World2Object; 
+            float4x4 modelMatrix = unity_ObjectToWorld;
+            float4x4 modelMatrixInverse = unity_WorldToObject; 
                // multiplication with unity_Scale.w is unnecessary 
                // because we normalize transformed vectors
  
@@ -237,8 +240,8 @@
          {
             vertexOutput output;
  
-            float4x4 modelMatrix = _Object2World;
-            float4x4 modelMatrixInverse = _World2Object; 
+            float4x4 modelMatrix = unity_ObjectToWorld;
+            float4x4 modelMatrixInverse = unity_WorldToObject; 
                // multiplication with unity_Scale.w is unnecessary 
                // because we normalize transformed vectors
  
@@ -335,8 +338,8 @@
          {
             vertexOutput output;
  
-            float4x4 modelMatrix = _Object2World;
-            float4x4 modelMatrixInverse = _World2Object; 
+            float4x4 modelMatrix = unity_ObjectToWorld;
+            float4x4 modelMatrixInverse = unity_WorldToObject; 
                // multiplication with unity_Scale.w is unnecessary 
                // because we normalize transformed vectors
  
