@@ -35,35 +35,53 @@ static bool s_engineAutomaticallyPaused = false;
     {
         return YES;
     }
-    return [super application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+
+    if ([[self superclass] instancesRespondToSelector:@selector(application:openURL:sourceApplication:annotation:)])
+    {
+        return [super application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+    }
+
+    return NO;
 }
 
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
 {
     [UnitySocial didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 
-    [super application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    if ([[self superclass] instancesRespondToSelector:@selector(application:didRegisterForRemoteNotificationsWithDeviceToken:)])
+    {
+        [super application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+    }
 }
 
 - (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
 {
     [UnitySocial didFailToRegisterForRemoteNotificationsWithError:error];
 
-    [super application:application didFailToRegisterForRemoteNotificationsWithError:error];
+    if ([[self superclass] instancesRespondToSelector:@selector(application:didFailToRegisterForRemoteNotificationsWithError:)])
+    {
+        [super application:application didFailToRegisterForRemoteNotificationsWithError:error];
+    }
 }
 
 - (void)application:(UIApplication*)application didReceiveRemoteNotification:(NSDictionary*)userInfo
 {
     [UnitySocial didReceiveRemoteNotification:userInfo];
 
-    [super application:application didReceiveRemoteNotification:userInfo];
+    if ([[self superclass] instancesRespondToSelector:@selector(application:didReceiveRemoteNotification:)])
+    {
+        [super application:application didReceiveRemoteNotification:userInfo];
+    }
 }
 
 - (void)application:(UIApplication*)application didRegisterUserNotificationSettings:(UIUserNotificationSettings*)notificationSettings
 {
     [UnitySocial didRegisterUserNotificationSettings:notificationSettings];
 
-    //[super application:application didRegisterUserNotificationSettings:notificationSettings]; not defined in UnityAppController
+    if ([[self superclass] instancesRespondToSelector:@selector(application:didRegisterUserNotificationSettings:)])
+    {
+        [super application:application didRegisterUserNotificationSettings:notificationSettings];
+    }
 }
 
 @end
@@ -109,11 +127,14 @@ static UnitySocialNativeWrapper* unitySocialNativeWrapper = [UnitySocialNativeWr
 
 + (NSString*)jsonFromDictionary:(NSDictionary*)dictionary
 {
-    NSError* error = nil;
-    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:&error];
-    if (error == nil)
+    if (dictionary != nil)
     {
-        return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        NSError* error = nil;
+        NSData* jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:&error];
+        if (error == nil)
+        {
+            return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+        }
     }
     return nil;
 }
@@ -208,7 +229,11 @@ static UnitySocialNativeWrapper* unitySocialNativeWrapper = [UnitySocialNativeWr
     if (s_eventListenerName != NULL)
     {
         NSString* jsonMetadata = [UnitySocialNativeWrapper jsonFromDictionary:metadata];
-        UnitySendMessage(s_eventListenerName, "UnitySocialRewardClaimed", [jsonMetadata UTF8String]);
+
+        if (jsonMetadata != nil)
+        {
+            UnitySendMessage(s_eventListenerName, "UnitySocialRewardClaimed", [jsonMetadata UTF8String]);
+        }
     }
 }
 
@@ -252,7 +277,11 @@ static UnitySocialNativeWrapper* unitySocialNativeWrapper = [UnitySocialNativeWr
     if (s_eventListenerName != NULL)
     {
         NSString* jsonOptions = [UnitySocialNativeWrapper jsonFromDictionary:options];
-        UnitySendMessage(s_eventListenerName, "UnitySocialUpdateEntryPointState", [jsonOptions UTF8String]);
+
+        if (jsonOptions != nil)
+        {
+            UnitySendMessage(s_eventListenerName, "UnitySocialUpdateEntryPointState", [jsonOptions UTF8String]);
+        }
     }
 }
 
@@ -292,13 +321,14 @@ static float PixelToPoint(float pixels)
 extern "C" {
 static bool s_Initialized = false;
 
-void UnitySocialInitialize(const char* clientId, const char* eventListenerName)
+void UnitySocialInitialize(const char* clientId, const char* eventListenerName, const char* bakedAchievements, const char* bakedLeaderboards)
 {
     if (unitySocialNativeWrapper != nil && !s_Initialized)
     {
         s_eventListenerName = strdup(eventListenerName);
 
         [UnitySocial setDelegate:unitySocialNativeWrapper];
+        [UnitySocial setGameServicesDefinitions:UnitySocialCreateNSString(bakedAchievements) andLeaderboards:UnitySocialCreateNSString(bakedLeaderboards)];
         [UnitySocial initializeWithClientId:UnitySocialCreateNSString(clientId)];
 
         UIViewController* viewController = UnityGetGLViewController();
@@ -396,17 +426,18 @@ const char* UnitySocialGetEntryPointState()
 {
     NSDictionary* entryPointState = [UnitySocial getEntryPointState];
     NSString* jsonState = [UnitySocialNativeWrapper jsonFromDictionary:entryPointState];
-    const char* c_str = [jsonState UTF8String];
-    if (c_str)
+
+    if (jsonState != nil)
     {
-        char* copyStr = (char*)malloc(strlen(c_str) + 1);
-        strcpy(copyStr, c_str);
-        return copyStr;
+        return strdup([jsonState UTF8String]);
     }
-    else
-    {
-        return NULL;
-    }
+
+    return NULL;
+}
+
+void UnitySocialSetManifestServer(const char* manifestServer)
+{
+    [UnitySocial setManifestServer:UnitySocialCreateNSString(manifestServer)];
 }
 
 void UnitySocialSetColorTheme(const char* theme)

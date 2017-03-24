@@ -11,7 +11,7 @@ public class HeyPlayManager : MonoBehaviour {
 	public GameObject m_notificationBadgeGO;
 	public Text m_notificationText;
 	public Text m_notificationTextGO;
-
+	string newText;
 	public GameObject ResetGameOverWind;
 	public GameObject ResetGameOverFG;
 	public GameObject ResetGameOverTNT;
@@ -29,23 +29,25 @@ public class HeyPlayManager : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 
+	
+
 //		Dictionary<string, object> colorTheme = new Dictionary<string, string>();
 //		colorTheme.Add("main", "#147A00");
 //		colorTheme.Add("accent", "#FFBE00");
 //		UnitySocial.SetColorTheme(colorTheme);
 
-		UnitySocial.Initialized += HandleInitialized;
-		UnitySocial.GameShouldPause += HandleGameShouldPause;
-		UnitySocial.GameShouldResume += HandleGameShouldResume;
-		UnitySocial.RewardClaimed += HandleRewardClaimed;
-		UnitySocial.ChallengeStarted += HandleChallengeStarted;
-		UnitySocial.Initialize();
+		UnitySocial.SocialCore.onInitialized.AddListener(HandleInitialized);
+		UnitySocial.SocialCore.onGameShouldPause.AddListener(HandleGameShouldPause);
+		UnitySocial.SocialCore.onGameShouldResume.AddListener(HandleGameShouldResume);
+		UnitySocial.SocialCore.onRewardClaimed.AddListener(HandleRewardClaimed);
+		UnitySocial.Challenges.onChallengeStarted.AddListener(HandleChallengeStarted);
+		UnitySocial.SocialCore.Initialize();
 
 	}
 	
 	// Update is called once per frame
 	public void ShowSocialUI () {
-		UnitySocial.EntryPointClicked();
+		UnitySocial.SocialOverlay.EntryPointClicked();
 	}
 
 	void HandleInitialized(bool success)
@@ -66,26 +68,26 @@ public class HeyPlayManager : MonoBehaviour {
 		switch (level) {
 		case "WindMode":
 			ExecuteEvents.Execute<IPointerClickHandler>(ExecuteEvents.GetEventHandler<IPointerClickHandler>(WindLevel), new PointerEventData(EventSystem.current), ExecuteEvents.pointerClickHandler);
-			UnitySocial.StartSession ();
+			UnitySocial.PlaySession.Begin ();
 			break;
 		case "FGMode":
 			ExecuteEvents.Execute<IPointerClickHandler>(ExecuteEvents.GetEventHandler<IPointerClickHandler>(FGLevel), new PointerEventData(EventSystem.current), ExecuteEvents.pointerClickHandler);
-			UnitySocial.StartSession ();
+			UnitySocial.PlaySession.Begin ();
 			break;
 		case "TNTMode":
 			ExecuteEvents.Execute<IPointerClickHandler>(ExecuteEvents.GetEventHandler<IPointerClickHandler>(TNTLevel), new PointerEventData(EventSystem.current), ExecuteEvents.pointerClickHandler);
-			UnitySocial.StartSession ();
+			UnitySocial.PlaySession.Begin ();
 			break;
 		case "BuddyPong":
 			ExecuteEvents.Execute<IPointerClickHandler>(ExecuteEvents.GetEventHandler<IPointerClickHandler>(PongLevel), new PointerEventData(EventSystem.current), ExecuteEvents.pointerClickHandler);
-			UnitySocial.StartSession ();
+			UnitySocial.PlaySession.Begin ();
 			break;
 
 		}
 
 	}
 
-	void HandleChallengeStarted(Dictionary<string, object> challenge, Dictionary<string,object>metadata)
+	void HandleChallengeStarted(UnitySocial.Entities.ChallengeStatus status)
 	{
 		unHideHP ();
 
@@ -93,11 +95,8 @@ public class HeyPlayManager : MonoBehaviour {
 
 		string challengeStr = "";
 		Debug.Log("Challenge starts");
-		foreach(KeyValuePair<string,object> kvp in challenge)
-		{
-			Debug.Log("Challenge information: "+kvp.Key+ ", "+kvp.Value);
-		}
-		foreach(KeyValuePair<string,object> kvp in metadata)
+	
+		foreach(KeyValuePair<string,object> kvp in status.metadata)
 		{
 			//This metadata is provided by you when creating challenges
 			Debug.Log("Challenge metadata: "+kvp.Key+ ", "+kvp.Value);
@@ -150,7 +149,7 @@ public class HeyPlayManager : MonoBehaviour {
 	public void SessionHoldStart(){
 		if (PlayerPrefs.GetInt ("sessionHold")==1) {
 			PlayerPrefs.SetInt ("sessionHold", 0);
-			UnitySocial.StartSession ();
+			UnitySocial.PlaySession.Begin ();
 
 		}
 
@@ -185,11 +184,11 @@ public class HeyPlayManager : MonoBehaviour {
 	}
 
 	void OnEnable(){
-		UnitySocial.EntryPointStateUpdated += HandleUnitySocialEntryPointStateUpdate;
-		UnitySocial.notificationLocation = UnitySocial.NotificationLocation.RightTop;
-		UnitySocial.notificationOffset = 0;
-		UnitySocial.entryPointUpdatesEnabled = true;
-		UnitySocial.entryPointImageSize = 128;
+		UnitySocial.SocialOverlay.onEntryPointStateUpdated.AddListener(HandleUnitySocialEntryPointStateUpdate);
+		UnitySocial.SocialOverlay.notificationActorLocation = UnitySocial.SocialOverlay.NotificationLocation.RightTop;
+		UnitySocial.SocialOverlay.notificationActorOffset = 0;
+		UnitySocial.SocialOverlay.entryPointUpdatesEnabled = true;
+		UnitySocial.SocialOverlay.entryPointImageSize = 128;
 //		if(m_storedNotificationCount==0)
 //		{
 //			m_notificationBadge.SetActive(false);
@@ -199,31 +198,33 @@ public class HeyPlayManager : MonoBehaviour {
 	}
 
 	public void unHideHP(){
-		UnitySocial.notificationLocation = UnitySocial.NotificationLocation.RightTop;
-		UnitySocial.entryPointUpdatesEnabled = true;
+		UnitySocial.SocialOverlay.notificationActorLocation = UnitySocial.SocialOverlay.NotificationLocation.RightTop;
+		UnitySocial.SocialOverlay.entryPointUpdatesEnabled = true;
 	}
 
 	void OnDisable(){
-			UnitySocial.EntryPointStateUpdated -=  HandleUnitySocialEntryPointStateUpdate; 
-			UnitySocial.notificationLocation = UnitySocial.NotificationLocation.Hidden; 
-			UnitySocial.entryPointUpdatesEnabled = false; 
+		UnitySocial.SocialOverlay.onEntryPointStateUpdated.RemoveListener(HandleUnitySocialEntryPointStateUpdate);
+		UnitySocial.SocialOverlay.notificationActorLocation = UnitySocial.SocialOverlay.NotificationLocation.Hidden; 
+		UnitySocial.SocialOverlay.entryPointUpdatesEnabled = false;
 //		m_notificationBadge.SetActive(false);
 	}
 
-	private void HandleUnitySocialEntryPointStateUpdate(UnitySocial.EntryPointState newState)
+	private void HandleUnitySocialEntryPointStateUpdate(UnitySocial.Entities.EntryPointState newState)
 	{
 		m_storedNotificationCount = newState.notificationCount;
 
-		if(newState.notificationCount != 0)
+		if(newState.notificationCount > 0)
 		{
 			m_notificationBadge.SetActive(true);
 			m_notificationBadgeGO.SetActive(true);
 
-			string newText = "9+";
-			if(newState.notificationCount < 10 && newState.notificationCount > 0)
-				newText = newState.notificationCount.ToString();
-			else
-				newText = " ";
+			if (newState.notificationCount < 10 && newState.notificationCount > 0) {
+				newText = newState.notificationCount.ToString ();
+			} 
+			if(newState.notificationCount >= 10){
+				 newText = "9+";
+
+			}
 			m_notificationText.text = newText;
 			m_notificationTextGO.text = newText;
 
@@ -234,7 +235,7 @@ public class HeyPlayManager : MonoBehaviour {
 		} }
 
 	public void StartingLevel(){
-		UnitySocial.StartSession ();
+		UnitySocial.PlaySession.Begin ();
 
 
 	}
@@ -259,31 +260,31 @@ public class HeyPlayManager : MonoBehaviour {
 //	}
 	 void EndingSessionWind(int endScore){
 		int score = endScore;
-		Dictionary<string, object> sessionData = new Dictionary<string, object>();
-		sessionData.Add("WindMode", score);
-		UnitySocial.EndSession(sessionData);
+//		Dictionary<string, object> sessionData = new Dictionary<string, object>();
+//		sessionData.Add("WindMode", score);
+		UnitySocial.PlaySession.SendEvent("WindMode", (float)score);
 
 	}
 	void EndingSessionFG(int endScore){
 		int score = endScore;
-		Dictionary<string, object> sessionData = new Dictionary<string, object>();
-		sessionData.Add("FGMode", score);
-		UnitySocial.EndSession(sessionData);
+//		Dictionary<string, object> sessionData = new Dictionary<string, object>();
+//		sessionData.Add("FGMode", score);
+		UnitySocial.PlaySession.SendEvent("FGMode", (float)score);
 
 	}
 	void EndingSessionTNT(int endScore){
 		int score = endScore;
-		Dictionary<string, object> sessionData = new Dictionary<string, object>();
-		sessionData.Add("TNTMode", score);
-		UnitySocial.EndSession(sessionData);
+//		Dictionary<string, object> sessionData = new Dictionary<string, object>();
+//		sessionData.Add("TNTMode", score);
+		UnitySocial.PlaySession.SendEvent("TNTMode", (float)score);
 
 	}
 	 void EndingSessionPong(float endScore){
 		float score = endScore*1000;
 
-		Dictionary<string, object> sessionData = new Dictionary<string, object>();
-		sessionData.Add("BuddyPong", (int)score);
-		UnitySocial.EndSession(sessionData);
+//		Dictionary<string, object> sessionData = new Dictionary<string, object>();
+//		sessionData.Add("BuddyPong", (int)score);
+		UnitySocial.PlaySession.SendEvent("BuddyPong", (float)score);
 
 	}
 

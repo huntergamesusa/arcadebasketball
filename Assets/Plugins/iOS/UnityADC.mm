@@ -79,10 +79,6 @@ NSString* set_adc_cur_zone( NSString* new_adc_cur_zone )
 #include <iostream>
 using namespace std;
 
-//Important Note: Unity is going to try to free what we return from these
-//We can't be sure how long [NSString* UTF8String] is going to stick around anyway
-//So we use strdup
-
 extern "C" {
     void SetCustomID( const char* custom_id ) {
         NSString* custom_id_nsstr = [NSString stringWithUTF8String:custom_id];
@@ -166,9 +162,10 @@ extern "C" {
         NSString * zid = set_adc_cur_zone( [NSString stringWithUTF8String:zone_id] );
         NSString* result_str = [AdColony getVirtualCurrencyNameForZone:zid];
         return result_str ? strdup([result_str UTF8String]) : strdup("undefined");
+        /* return result_str ? result_str UTF8String : "undefined" */
     }
 
-    const char* StatusForZone( const char* zone_id) {
+    const char* StatusForZone( const char* zone_id ) {
         NSString* zid = set_adc_cur_zone( [NSString stringWithUTF8String:zone_id] );
         switch ([AdColony zoneStatusForZone:zid]) {
             case ADCOLONY_ZONE_STATUS_NO_ZONE:

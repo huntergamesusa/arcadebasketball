@@ -1,3 +1,12 @@
+/*
+*  UnitySocialSDK
+*
+*  Version: 0.4.0 ($COMMIT)
+*  Date: 2017-03-22T10:53:51Z
+*  Copyright (c) 2017 Unity. All rights reserved.
+*
+*/
+
 #import <UIKit/UIKit.h>
 
 @protocol UnitySocialDelegate<NSObject>
@@ -17,6 +26,9 @@
 #pragma mark - Initialization
 + (id<UnitySocialDelegate>)delegate;
 + (void)setDelegate:(id<UnitySocialDelegate>)delegate;
++ (void)setGameServicesDefinitions:(NSString*)achievements andLeaderboards:(NSString*)leaderboards;
++ (void)setManifestServer:(NSString*)manifestServer;
++ (NSString*)getManifestServer;
 + (void)initializeWithClientId:(NSString*)clientId;
 + (void)showOnView:(UIView*)view;
 + (void)showOnView:(UIView*)view andModule:(NSString*)moduleName;

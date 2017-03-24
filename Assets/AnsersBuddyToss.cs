@@ -9,8 +9,8 @@ public class AnsersBuddyToss : MonoBehaviour {
 );
 
 		if (eventname == "FGStart"||eventname =="PongStart"||eventname =="TNTStart"||eventname =="WindStart") {
-			UnitySocial.notificationLocation = UnitySocial.NotificationLocation.Hidden; 
-			UnitySocial.entryPointUpdatesEnabled = false; 
+			UnitySocial.SocialOverlay.notificationActorLocation = UnitySocial.SocialOverlay.NotificationLocation.Hidden; 
+			UnitySocial.SocialOverlay.entryPointUpdatesEnabled = false; 
 		}
 	}
 

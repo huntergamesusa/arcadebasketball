@@ -177,6 +177,8 @@ namespace ChartboostSDK {
 		public static readonly CBMediation Supersonic = new CBMediation("Supersonic");
 		public static readonly CBMediation AdMob = new CBMediation ("AdMob");
 		public static readonly CBMediation HyprMX = new CBMediation ("HyprMX");
+		public static readonly CBMediation AerServ = new CBMediation ("AerServ");
+
 		public static readonly CBMediation Other = new CBMediation("Other");
 
 		public override String ToString() {
@@ -225,6 +227,9 @@ namespace ChartboostSDK {
 		///  been displayed on the screen for a given CBLocation.
 		/// </summary>
 		/// <param name="location">The location for the Chartboost impression type.</param>
+		#if UNITY_ANDROID
+        [Obsolete("didDisplayInterstitial is not Available on Android Unity, it will be removed in a future release")]
+        #endif
 		public static event Action<CBLocation> didDisplayInterstitial;
 
 		/// <summary>
@@ -294,6 +299,9 @@ namespace ChartboostSDK {
 		///  been displayed on the screen for a given CBLocation.
 		/// </summary>
 		/// <param name="location">The location for the Chartboost impression type.</param>
+		#if UNITY_ANDROID
+		[Obsolete("didDisplayMoreApps is not Available on Android Unity, it will be removed in a future release")]
+        #endif
 		public static event Action<CBLocation> didDisplayMoreApps;
 
 		/// <summary>
@@ -354,6 +362,9 @@ namespace ChartboostSDK {
 		///  been displayed on the screen for a given CBLocation.
 		/// </summary>
 		/// <param name="location">The location for the Chartboost impression type.</param>
+		#if UNITY_ANDROID
+		[Obsolete("didDisplayRewardedVideo is not Available on Android Unity, it will be removed in a future release")]
+		#endif
 		public static event Action<CBLocation> didDisplayRewardedVideo;
 
 		/// <summary>
@@ -950,11 +961,6 @@ namespace ChartboostSDK {
 
 		private void didDismissInterstitialEvent(string location) {
 			doUnityPause(false, false);
-			#if UNITY_ANDROID
-			if(CBExternal.isWebViewEnabled()) {
-				Screen.orientation = ScreenOrientation.AutoRotation;
-			}
-			#endif
 			if (didDismissInterstitial != null)
 				didDismissInterstitial(CBLocation.locationFromName(location));
 		}
@@ -987,11 +993,6 @@ namespace ChartboostSDK {
 
 		public void didDisplayInterstitialEvent(string location) {
 			doUnityPause(true, true);
-			#if UNITY_ANDROID
-			if(CBExternal.isWebViewEnabled()) {
-				Screen.orientation = Screen.orientation;
-			}
-			#endif
 			if(didDisplayInterstitial != null)
 			{
 				didDisplayInterstitial(CBLocation.locationFromName(location));
@@ -1064,11 +1065,6 @@ namespace ChartboostSDK {
 
 		private void didDismissRewardedVideoEvent(string location) {
 			doUnityPause(false, false);
-			#if UNITY_ANDROID
-			if(CBExternal.isWebViewEnabled()) {
-				Screen.orientation = ScreenOrientation.AutoRotation;
-			}
-			#endif
 			if (didDismissRewardedVideo != null)
 				didDismissRewardedVideo(CBLocation.locationFromName(location));
 		}
@@ -1117,11 +1113,6 @@ namespace ChartboostSDK {
 
 		private void didDisplayRewardedVideoEvent(string location) {
 			doUnityPause(true, true);
-			#if UNITY_ANDROID
-			if(CBExternal.isWebViewEnabled()) {
-				Screen.orientation = Screen.orientation;
-			}
-			#endif
 			if (didDisplayRewardedVideo != null)
 			{
 				didDisplayRewardedVideo(CBLocation.locationFromName(location));

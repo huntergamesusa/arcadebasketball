@@ -1,163 +1,335 @@
-using UnityEngine;
-using UnityEditor;
 using System;
-using System.Collections;
 using System.IO;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+using UnitySocial.Internal;
 
-[CustomEditor(typeof(UnitySocialSettings))]
-public class UnitySocialSettingsEditor : Editor
+namespace UnitySocial
 {
-    public const string settingsFile = "UnitySocialSettings";
-    public const string settingsFileExtension = ".asset";
-
-    private static GUIContent labelClientId = new GUIContent("Project ID");
-    private static GUIContent labelSupport_iOS = new GUIContent("iOS enabled [?]", "Check to enable Unity Social on iOS devices");
-    private static GUIContent labelSupport_Android = new GUIContent("Android enabled [?]", "Check to enable Unity Social on Android devices");
-
-    private UnitySocialSettings currentSettings = null;
-    private bool iosSupportEnabled;
-    private bool androidSupportEnabled;
-
-    [MenuItem("Edit/Unity Social/Settings")]
-    public static void ShowSettings()
+    [CustomEditor(typeof(UnitySocialSettings))]
+    public class UnitySocialSettingsEditor : Editor
     {
-        UnitySocialSettings settingsInstance = LoadSettings();
+        private const decimal kMinimumRequirediOSVersion = 7.0m;
+        private const string kSettingsFile = "UnitySocialSettings";
+        private const string kSettingsFileExtension = ".asset";
 
-        if (settingsInstance == null)
-        {
-            settingsInstance = CreateSettings();
-        }
+        private static GUIContent s_LabelClientId = new GUIContent("Project ID");
+        private static GUIContent s_LabelSupport_iOS = new GUIContent("iOS enabled [?]", "Check to enable Unity Social on iOS devices");
+        private static GUIContent s_LabelSupport_Android = new GUIContent("Android enabled [?]", "Check to enable Unity Social on Android devices");
+        private static GUIContent s_LabelAndroidPushNotifications = new GUIContent("Push Notifications");
+        private static GUIContent s_LabelAndroidFCMSenderID = new GUIContent("Sender ID");
 
-        if (settingsInstance != null)
+        private static string[] s_AndroidPushNotificationBackends = new string[]
         {
-            Selection.activeObject = settingsInstance;
-        }
-    }
+            "Disabled", "Firebase",
+        };
 
-    public override void OnInspectorGUI()
-    {
-        try
+        private UnitySocialSettings m_CurrentSettings = null;
+        private bool m_IOSSupportEnabled;
+        private bool m_AndroidSupportEnabled;
+
+        [MenuItem("Edit/Unity Social/Settings")]
+        public static void ShowSettings()
         {
-            // Might be null when this gui is open and this file is being reimported
-            if (target == null)
+            UnitySocialSettings settingsInstance = LoadSettings();
+
+            if (settingsInstance == null)
             {
-                Selection.activeObject = null;
-                return;
+                settingsInstance = CreateSettings();
             }
 
-            currentSettings = (UnitySocialSettings) target;
-
-            if (currentSettings != null)
+            if (settingsInstance != null)
             {
-                bool settingsValid = currentSettings.IsValid;
+                Selection.activeObject = settingsInstance;
+            }
+        }
 
-                EditorGUILayout.HelpBox("1) Enter your game credentials", MessageType.None);
+        public static UnitySocialSettings LoadSettings()
+        {
+            return (UnitySocialSettings) Resources.Load(kSettingsFile);
+        }
 
-                if (!currentSettings.IsValid)
+        public override void OnInspectorGUI()
+        {
+            try
+            {
+                // Might be null when this gui is open and this file is being reimported
+                if (target == null)
                 {
-                    EditorGUILayout.HelpBox("Invalid or missing game credentials, Unity Social disabled.", MessageType.Error);
+                    Selection.activeObject = null;
+                    return;
                 }
 
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.LabelField(labelClientId, GUILayout.Width(108), GUILayout.Height(18));
-                currentSettings.clientId = TrimmedText(EditorGUILayout.TextField(currentSettings.clientId));
-                EditorGUILayout.EndHorizontal();
+                m_CurrentSettings = (UnitySocialSettings) target;
 
-                EditorGUILayout.HelpBox("2) Enable Unity Social on these platforms", MessageType.None);
-
-                EditorGUILayout.BeginVertical();
-
-                bool validityChanged = currentSettings.IsValid != settingsValid;
-                bool selectedPlatformsChanged = false;
-
-                iosSupportEnabled = EditorGUILayout.Toggle(labelSupport_iOS, currentSettings.iosSupportEnabled);
-                androidSupportEnabled = EditorGUILayout.Toggle(labelSupport_Android, currentSettings.androidSupportEnabled);
-
-                if (iosSupportEnabled != currentSettings.iosSupportEnabled)
+                if (m_CurrentSettings != null)
                 {
-                    selectedPlatformsChanged = true;
-                    currentSettings.iosSupportEnabled = iosSupportEnabled;
+                    bool settingsValid = m_CurrentSettings.isValid;
 
-                    if (iosSupportEnabled)
+                    EditorGUILayout.HelpBox("1) Enter your game credentials", MessageType.None);
+
+                    if (!m_CurrentSettings.isValid)
                     {
-                        iOSTargetOSVersion v = PlayerSettings.iOS.targetOSVersion;
+                        EditorGUILayout.HelpBox("Invalid or missing game credentials, Unity Social disabled.", MessageType.Error);
+                    }
 
-                        if (v == iOSTargetOSVersion.iOS_4_0 || v == iOSTargetOSVersion.iOS_4_1 || v == iOSTargetOSVersion.iOS_4_2 ||
-                            v == iOSTargetOSVersion.iOS_4_3 || v == iOSTargetOSVersion.iOS_5_0 || v == iOSTargetOSVersion.iOS_5_1 ||
-                            v == iOSTargetOSVersion.iOS_6_0 || v == iOSTargetOSVersion.Unknown)
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.LabelField(s_LabelClientId, GUILayout.Width(108), GUILayout.Height(18));
+                    string newClientId = TrimmedText(EditorGUILayout.TextField(m_CurrentSettings.clientId));
+                    if (m_CurrentSettings.clientId != newClientId)
+                    {
+                        m_CurrentSettings.clientId = newClientId;
+                        GameServicesEditor.BakeGameServicesData();
+                    }
+                    EditorGUILayout.EndHorizontal();
+
+                    EditorGUILayout.HelpBox("2) Enable Unity Social on these platforms", MessageType.None);
+
+                    EditorGUILayout.BeginVertical();
+
+                    bool validityChanged = m_CurrentSettings.isValid != settingsValid;
+                    bool selectedPlatformsChanged = false;
+
+                    m_IOSSupportEnabled = EditorGUILayout.Toggle(s_LabelSupport_iOS, m_CurrentSettings.iosSupportEnabled);
+                    m_AndroidSupportEnabled = EditorGUILayout.Toggle(s_LabelSupport_Android, m_CurrentSettings.androidSupportEnabled);
+
+                    if (GUILayout.Button("Refresh Baked Game Services Data"))
+                    {
+                        GameServicesEditor.BakeGameServicesData();
+                    }
+
+                    if (m_IOSSupportEnabled != m_CurrentSettings.iosSupportEnabled)
+                    {
+                        selectedPlatformsChanged = true;
+                        m_CurrentSettings.iosSupportEnabled = m_IOSSupportEnabled;
+
+                        if (m_IOSSupportEnabled)
                         {
-                            PlayerSettings.iOS.targetOSVersion = iOSTargetOSVersion.iOS_7_0;
-                            Debug.Log("Unity Social requires minimum iOS 7.0. Target OS version updated to 7.0");
+                            FixiOSVersion();
+                        }
+
+                        GameServicesEditor.BakeGameServicesData();
+                        EditorUtility.SetDirty(m_CurrentSettings);
+                    }
+                    else if (m_AndroidSupportEnabled != m_CurrentSettings.androidSupportEnabled)
+                    {
+                        EnableAndroidSupport(m_AndroidSupportEnabled);
+                        UnitySocialAndroidDependencies.SetAndroidManifestConfig(m_CurrentSettings);
+                        selectedPlatformsChanged = true;
+                        m_CurrentSettings.androidSupportEnabled = m_AndroidSupportEnabled;
+
+                        GameServicesEditor.BakeGameServicesData();
+                        if (m_AndroidSupportEnabled)
+                        {
+                            AndroidSdkVersions sdkVer = PlayerSettings.Android.minSdkVersion;
+
+                            if (sdkVer < AndroidSdkVersions.AndroidApiLevel16)
+                            {
+                                PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel16;
+                                Debug.Log("Unity Social requires minimum Android API level 16. API minSdkVersion updated to 16.");
+                            }
+                        }
+
+                        EditorUtility.SetDirty(m_CurrentSettings);
+                    }
+
+                    if (m_AndroidSupportEnabled)
+                    {
+                        AndroidPushNotificationSettings();
+
+                        if (GUILayout.Button("Force Import Android dependencies"))
+                        {
+                            UnitySocialAndroidDependencies.PlayServicesImport();
                         }
                     }
 
-                    EditorUtility.SetDirty(currentSettings);
-                }
-                else if (androidSupportEnabled != currentSettings.androidSupportEnabled)
-                {
-                    selectedPlatformsChanged = true;
-                    currentSettings.androidSupportEnabled = androidSupportEnabled;
+                    if (validityChanged || selectedPlatformsChanged)
+                    {
+                        UnitySocialPostprocessor.ValidateState(m_CurrentSettings);
+                    }
 
-                    EditorUtility.SetDirty(currentSettings);
+                    EditorGUILayout.EndVertical();
                 }
-
-                if (validityChanged || selectedPlatformsChanged)
-                {
-                    UnitySocialPostprocessor.ValidateState(currentSettings);
-                }
-
-                EditorGUILayout.EndVertical();
             }
-        }
-        catch (Exception e)
-        {
-            if (e != null)
+            catch (Exception)
             {
             }
         }
-    }
 
-    private static string TrimmedText(string txt)
-    {
-        if (txt != null)
+        private static void FixiOSVersion()
         {
-            return txt.Trim();
-        }
-        return "";
-    }
+            #if UNITY_5_3 || UNITY_5_4
+            iOSTargetOSVersion v = PlayerSettings.iOS.targetOSVersion;
 
-    private static UnitySocialSettings CreateSettings()
-    {
-        UnitySocialSettings everyplaySettings = (UnitySocialSettings) ScriptableObject.CreateInstance(typeof(UnitySocialSettings));
-
-        if (everyplaySettings != null)
-        {
-            if (!Directory.Exists(System.IO.Path.Combine(Application.dataPath, "Plugins/UnitySocial/Resources")))
+            if (v < iOSTargetOSVersion.iOS_7_0 || v == iOSTargetOSVersion.Unknown)
             {
-                AssetDatabase.CreateFolder("Assets/Plugins/UnitySocial", "Resources");
+                PlayerSettings.iOS.targetOSVersion = iOSTargetOSVersion.iOS_7_0;
+                Debug.Log("Unity Social requires minimum iOS 7.0. Target OS version updated to 7.0");
+            }
+            #else
+            decimal version;
+
+            if (!decimal.TryParse(PlayerSettings.iOS.targetOSVersionString, out version) || version < kMinimumRequirediOSVersion)
+            {
+                PlayerSettings.iOS.targetOSVersionString = kMinimumRequirediOSVersion.ToString();
+                Debug.Log(string.Format("Unity Social requires minimum iOS {0}. Target OS version updated to {0}", kMinimumRequirediOSVersion));
+            }
+            #endif
+        }
+
+        private static string TrimmedText(string txt)
+        {
+            if (txt != null)
+            {
+                return txt.Trim();
+            }
+            return "";
+        }
+
+        private static UnitySocialSettings CreateSettings()
+        {
+            UnitySocialSettings everyplaySettings = (UnitySocialSettings) ScriptableObject.CreateInstance(typeof(UnitySocialSettings));
+
+            if (everyplaySettings != null)
+            {
+                if (!Directory.Exists(System.IO.Path.Combine(Application.dataPath, "Plugins/UnitySocial/Resources")))
+                {
+                    AssetDatabase.CreateFolder("Assets/Plugins/UnitySocial", "Resources");
+                }
+
+                AssetDatabase.CreateAsset(everyplaySettings, "Assets/Plugins/UnitySocial/Resources/" + kSettingsFile + kSettingsFileExtension);
+                AssetDatabase.SaveAssets();
+                AssetDatabase.Refresh();
+
+                return everyplaySettings;
             }
 
-            AssetDatabase.CreateAsset(everyplaySettings, "Assets/Plugins/UnitySocial/Resources/" + settingsFile + settingsFileExtension);
-            AssetDatabase.SaveAssets();
-            AssetDatabase.Refresh();
-
-            return everyplaySettings;
+            return null;
         }
 
-        return null;
-    }
-
-    public static UnitySocialSettings LoadSettings()
-    {
-        return (UnitySocialSettings) Resources.Load(settingsFile);
-    }
-
-    void OnDisable()
-    {
-        if (currentSettings != null)
+        private static void EnableAndroidSupport(bool enabled)
         {
-            EditorUtility.SetDirty(currentSettings);
-            currentSettings = null;
+            PluginImporter[] pluginImporters = PluginImporter.GetAllImporters();
+            foreach (PluginImporter pluginImporter in pluginImporters)
+            {
+                if (pluginImporter.assetPath.Contains("Plugins/UnitySocial/Native/Android"))
+                {
+                    pluginImporter.SetCompatibleWithPlatform(BuildTarget.Android, enabled);
+                }
+            }
+        }
+
+        private string ParseGoogleServicesJson()
+        {
+            #if UNITY_SOCIAL
+            try
+            {
+                string file = EditorUtility.OpenFilePanel("Open google-services.json", "", "json");
+                if (!string.IsNullOrEmpty(file) && File.Exists(file))
+                {
+                    string fileContent = File.ReadAllText(file);
+                    var dict = UnitySocial.Tools.DictionaryExtensions.JsonToDictionary(fileContent);
+
+                    try
+                    {
+                        var clients = dict["client"] as List<object>;
+                        var client = clients[0] as Dictionary<string, object>;
+                        var clientInfo = client["client_info"] as Dictionary<string, object>;
+                        var androidClientInfo = clientInfo["android_client_info"] as Dictionary<string, object>;
+                        var packageName = androidClientInfo["package_name"] as string;
+
+                        #if UNITY_5_3 || UNITY_5_4 || UNITY_5_5
+                        var currentPackageName = PlayerSettings.bundleIdentifier;
+                        #else
+                        var currentPackageName = PlayerSettings.applicationIdentifier;
+                        #endif
+
+                        if (packageName != currentPackageName)
+                        {
+                            string msg = string.Format("Bundle name mismatch in {0} (Unity Project: {1} JSON: {2}). Ignoring.",
+                                    file, currentPackageName, packageName);
+                            throw new NotSupportedException(msg);
+                        }
+
+                        var projectInfo = dict["project_info"] as Dictionary<string, object>;
+                        return (string) projectInfo["project_number"];
+                    }
+                    catch (KeyNotFoundException e)
+                    {
+                        Debug.LogWarningFormat("Error parsing file {0}. {1}", file, e.Message);
+                    }
+                    catch (NotSupportedException e)
+                    {
+                        Debug.Log(e.Message);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.LogWarningFormat("Something went wrong... {0}", e.Message);
+            }
+            #else
+            Debug.Log("Unity Social is not enabled. Make sure you have selected iOS or Android as the Unity build platform.");
+            #endif
+
+            return null;
+        }
+
+        private void OnDisable()
+        {
+            if (m_CurrentSettings != null)
+            {
+                EditorUtility.SetDirty(m_CurrentSettings);
+                m_CurrentSettings = null;
+            }
+        }
+
+        private void AndroidPushNotificationSettings()
+        {
+            EditorGUILayout.LabelField(s_LabelAndroidPushNotifications, GUILayout.Width(108), GUILayout.Height(18));
+            string backend = m_CurrentSettings.androidPushNotificationBackend;
+            int index = Array.FindIndex(s_AndroidPushNotificationBackends, name => name.Equals(backend));
+            if (index == -1)
+            {
+                index = 0;
+            }
+            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Backend");
+            index = EditorGUILayout.Popup(index, s_AndroidPushNotificationBackends);
+            EditorGUILayout.EndHorizontal();
+            if (index > 0)
+            {
+                backend = s_AndroidPushNotificationBackends[index];
+            }
+            else
+            {
+                backend = "";
+            }
+            if (backend != m_CurrentSettings.androidPushNotificationBackend)
+            {
+                m_CurrentSettings.androidPushNotificationBackend = backend;
+                EditorUtility.SetDirty(m_CurrentSettings);
+            }
+
+            string senderId = m_CurrentSettings.androidPushNotificationSenderId;
+            if (backend.Length > 0)
+            {
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.LabelField(s_LabelAndroidFCMSenderID, GUILayout.ExpandWidth(true));
+                senderId = TrimmedText(EditorGUILayout.TextField(senderId));
+                EditorGUILayout.EndHorizontal();
+            }
+            if (backend.Equals("Firebase") && GUILayout.Button("Load from google-services.json"))
+            {
+                senderId = ParseGoogleServicesJson();
+            }
+
+            if (senderId != null && senderId != m_CurrentSettings.androidPushNotificationSenderId)
+            {
+                m_CurrentSettings.androidPushNotificationSenderId = senderId;
+                EditorUtility.SetDirty(m_CurrentSettings);
+            }
         }
     }
 }

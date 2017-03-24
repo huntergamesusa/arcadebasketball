@@ -11,10 +11,10 @@ using System.Threading;
 public class Vungle
 {
 	//Change this constant fields when a new version of the plugin or sdk was released
-	private const string PLUGIN_VERSION = "3.1.21";
-	private const string IOS_SDK_VERSION = "4.0.6";
+	private const string PLUGIN_VERSION = "3.1.29";
+	private const string IOS_SDK_VERSION = "4.0.9";
 	private const string WIN_SDK_VERSION = "1.3.15";
-	private const string ANDROID_SDK_VERSION = "4.0.2";
+	private const string ANDROID_SDK_VERSION = "4.0.3";
 
 	#region Events
 

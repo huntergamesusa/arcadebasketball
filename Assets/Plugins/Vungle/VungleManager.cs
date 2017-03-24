@@ -93,24 +93,24 @@ public class VungleManager : MonoBehaviour
 			{
 				double timeWatched = double.Parse( parts[1] );
 				double totalDuration = double.Parse( parts[2] );
-				
+
 				bool fireRightNow = adWinFinishedEventArgs != null;
-				
+  				
 				if(!fireRightNow)
 				{
 					adWinFinishedEventArgs = new AdFinishedEventArgs();
 				}
-				
+
 				adWinFinishedEventArgs.IsCompletedView = bool.Parse( parts[0] );
 				adWinFinishedEventArgs.TimeWatched = timeWatched;
 				adWinFinishedEventArgs.TotalDuration = totalDuration;
-				
-				if(fireRightNow)
-				{
-					OnAdFinishedEvent(adWinFinishedEventArgs);
-					adWinFinishedEventArgs = null;
-				}
-				
+  				
+  				if(fireRightNow)
+  				{
+  					OnAdFinishedEvent(adWinFinishedEventArgs);
+  					adWinFinishedEventArgs = null;
+  				}
+  				
 				OnVideoViewEvent(timeWatched, totalDuration);
 			}
 		}
@@ -240,6 +240,9 @@ public class VungleManager : MonoBehaviour
 			adFinishedEventArgs.WasCallToActionClicked = parts[1].Equals ("1");
 		}
 
+		adFinishedEventArgs.TotalDuration = 15;
+		adFinishedEventArgs.TimeWatched = adFinishedEventArgs.IsCompletedView?15:0;
+		
 		OnAdFinishedEvent(adFinishedEventArgs);
 		
 		OnVideoViewEvent(adFinishedEventArgs.IsCompletedView ? 15 : 0, 15);

@@ -478,6 +478,15 @@ public class ScaleAnimCharac : MonoBehaviour, IStoreListener {
 			args.purchasedProduct.metadata.localizedPrice.ToString(), 
 			args.purchasedProduct.metadata.isoCurrencyCode,"");
 
+		Answers.LogPurchase (
+			args.purchasedProduct.metadata.localizedPrice,
+			args.purchasedProduct.metadata.isoCurrencyCode,
+			true,
+			args.purchasedProduct.metadata.localizedTitle,
+			 "nonconsum",
+			args.purchasedProduct.transactionID,
+			null
+		);
 
 		for (int i = 0; i < purchaseString.Length; i++) {
 

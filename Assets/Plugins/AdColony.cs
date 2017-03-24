@@ -44,20 +44,19 @@ public class AdColonyAd {
 
 public class AdColony : MonoBehaviour
 {
-  // The single instance of the AdColony component
   private static AdColony instance;
   public static string version = "2.1.4.1";
 
-  //We need this so that native code has an object to send messages to
-  private static void ensureInstance()
-  {
+  //We need to make sure we have an instance so that we have an object to send messages to.
+  private static void ensureInstance() {
     if(instance == null) {
-      instance = FindObjectOfType( typeof(AdColony) ) as AdColony;
-      if(instance == null) {
+      instance = FindObjectOfType(typeof(AdColony)) as AdColony;
+      if(instance==null) {
         instance = new GameObject("AdColony").AddComponent<AdColony>();
       }
     }
   }
+
 
   // DELEGATE TYPE SPECIFICATIONS
   // Your class can define methods matching these signatures and assign them
@@ -159,6 +158,7 @@ public class AdColony : MonoBehaviour
     if (configured) {
       return;
     }
+    ensureInstance();
 
     if (app_version.Contains("version:")) {
       string[] delims = new string[] {"version:", ","};
@@ -166,7 +166,6 @@ public class AdColony : MonoBehaviour
       app_version = app_version_split[0];
     }
 
-    ensureInstance();
     IOSConfigure( app_version, app_id, zone_ids.Length, zone_ids );
     configured = true;
   }

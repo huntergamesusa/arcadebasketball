@@ -67,8 +67,9 @@ public class PlayV4VCAdButtonNate : MonoBehaviour {
 		//		Vungle.init ("","980241548","");
 		videoButton.enabled=true;
 		#if UNITY_IOS
-
+		if (Advertisement.isSupported && !Advertisement.isInitialized) {
 			Advertisement.Initialize ("73029", false);
+		}
 		#endif
 		#if UNITY_ANDROID
 		Advertisement.Initialize ("122862", false);
@@ -296,7 +297,7 @@ public class PlayV4VCAdButtonNate : MonoBehaviour {
 					if (Advertisement.IsReady()) {
 
 
-						Advertisement.Show (null,options);
+						Advertisement.Show ("rewardedVideoZone",options);
 						videoButton.enabled = false;
 					} else {
 						AdColony.ShowV4VC (false, zoneId);
@@ -313,7 +314,7 @@ public class PlayV4VCAdButtonNate : MonoBehaviour {
 
 				if (Advertisement.IsReady()) {
 
-					Advertisement.Show (null,options);
+					Advertisement.Show ("rewardedVideoZone",options);
 					videoButton.enabled = false;
 				} else {
 

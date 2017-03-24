@@ -650,6 +650,9 @@ namespace ChartboostSDK {
 				case "HyprMX":
 					library = 8;
 					break;
+		        case "AerServ":
+					library = 9;
+					break;
 			}
 			_chartBoostSetMediation(library, version);
 			Log("iOS : setMediation to = " + mediator.ToString() + " " + version);
