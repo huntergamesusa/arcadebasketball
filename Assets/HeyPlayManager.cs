@@ -259,24 +259,36 @@ public class HeyPlayManager : MonoBehaviour {
 //		}
 //	}
 	 void EndingSessionWind(int endScore){
-		int score = endScore;
-//		Dictionary<string, object> sessionData = new Dictionary<string, object>();
+		float score = (float)endScore;
+
+		UnitySocial.PlaySession.SendEvent(new Dictionary<string, float>() { {"WindMode", score} } );
+//		Dictionary<string, object> sessionData = new Dictionary<string, float>();
 //		sessionData.Add("WindMode", score);
-		UnitySocial.PlaySession.SendEvent("WindMode", (float)score);
+//		UnitySocial.PlaySession.SendEvent(sessionData);
+		UnitySocial.PlaySession.End();
+
 
 	}
 	void EndingSessionFG(int endScore){
-		int score = endScore;
+		float score = (float)endScore;
 //		Dictionary<string, object> sessionData = new Dictionary<string, object>();
 //		sessionData.Add("FGMode", score);
-		UnitySocial.PlaySession.SendEvent("FGMode", (float)score);
+//		UnitySocial.PlaySession.SendEvent("FGMode", (float)score);
+		UnitySocial.PlaySession.SendEvent(new Dictionary<string, float>() { {"FGMode", score} } );
+		UnitySocial.PlaySession.End();
+
+
 
 	}
 	void EndingSessionTNT(int endScore){
-		int score = endScore;
+		float score = (float)endScore;
 //		Dictionary<string, object> sessionData = new Dictionary<string, object>();
 //		sessionData.Add("TNTMode", score);
-		UnitySocial.PlaySession.SendEvent("TNTMode", (float)score);
+//		UnitySocial.PlaySession.SendEvent("TNTMode", (float)score);
+		UnitySocial.PlaySession.SendEvent(new Dictionary<string, float>() { {"TNTMode", score} } );
+
+		UnitySocial.PlaySession.End();
+
 
 	}
 	 void EndingSessionPong(float endScore){
@@ -284,7 +296,11 @@ public class HeyPlayManager : MonoBehaviour {
 
 //		Dictionary<string, object> sessionData = new Dictionary<string, object>();
 //		sessionData.Add("BuddyPong", (int)score);
-		UnitySocial.PlaySession.SendEvent("BuddyPong", (float)score);
+		UnitySocial.PlaySession.SendEvent(new Dictionary<string, float>() { {"BuddyPong", score} } );
+
+//		UnitySocial.PlaySession.SendEvent("BuddyPong", (float)score);
+		UnitySocial.PlaySession.End();
+
 
 	}
 
